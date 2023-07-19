@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    .headercontain{
+        display: grid;
+        width: 100%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .logo{
+        grid-column: 1 / span 1;
+    }
+    .logo img{
+        width: 40%;
+    }
+    .rightcontain{
+        grid-column: 3 /span 3;
+    }
+    .righttopcontain{
+        display: grid;
+        width: 100%;
+        margin: auto;
+       justify-content: space-between;  
+    }
+    .contactcontain{
+        display: flex;
+        grid-column: 1 / span 1;
+    }
+    .smlogoscontain{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: space-evenly;
+        grid-column: 3 /span 2;
+    }
+    .rightbottomcontain{
+        display: grid;
+        width: 100%;
+        margin: auto;
+       justify-content: space-between; 
+    }
+    .rightbottomcontain1{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        grid-column: 1 / span 3;
+    }
+    .rightbottomcontain2{
+        display: flex;
+        grid-column: 4 /span 1;
+    }
+    .welcomesec{
+        text-align: center;
+    }
+    .checkavailsec{
+        text-align: center;
+    }
+    .aboutussec{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+.aboutright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container {
+  position: relative;
+  display: inline-block
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.3s;
+}
+
+.image-container svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+.icon-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(29, 29, 29, 0.4);
+  opacity: 0;
+  transition: 0.3s;
+}
+.image-container:hover svg,
+.image-container:hover .icon-link {
+  opacity: 1;
+}
+.roomscontaintop{
+    text-align: center;
+}
+.roomscontainbottom {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.roomcard {
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.roomcard h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.roomcard p {
+  margin-bottom: 10px;
+}
+
+.roomcard button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.roomcard div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.roomprice{
+    display: flex;
+    flex-direction: column;
+}
+.servicecontaintop{
+  text-align: center;
+}
+.servicecontainbottom{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+
+}
+</style>
+<body>
+    <div class="headercontain">
+        <div class="logo"><img src="./logo1.jpeg"/></div>
+        <div class="rightcontain">
+            <div class="righttopcontain">
+            <div class="contactcontain">
+                <p>Contact:</p>
+                <P>0123456789</P>
+            </div>
+            <div class="smlogoscontain">
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM164 356c-55.3 0-100-44.7-100-100s44.7-100 100-100c27 0 49.5 9.8 67 26.2l-27.1 26.1c-7.4-7.1-20.3-15.4-39.8-15.4-34.1 0-61.9 28.2-61.9 63.2 0 34.9 27.8 63.2 61.9 63.2 39.6 0 54.4-28.5 56.8-43.1H164v-34.4h94.4c1 5 1.6 10.1 1.6 16.6 0 57.1-38.3 97.6-96 97.6zm220-81.8h-29v29h-29.2v-29h-29V245h29v-29H355v29h29v29.2z"/></svg></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></p>
+            </div>
+            </div>
+            <hr>
+            <div class="rightbottomcontain">
+                <div  class="rightbottomcontain1">
+                <div>Home</div>
+                <div>Rooms</div>
+                <div>Activities</div>
+                <div>Location</div>
+                <div>Event</div>
+                <div>Team</div>
+                <div>Contact</div>
+                </div>
+                <div class="rightbottomcontain2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="welcomesec">
+        <h1 class="welcomemsg">WELCOME TO ODYSSEY</h1>
+        <p>Welcome to Odyssey Hotel, where your journey to comfort and luxury begins. Experience a stay like no other as we take you on a memorable odyssey of relaxation and hospitality.</p>
+        <button>EXPLORE</button>
+    </div>
+
+    <div class="checkavailsec">
+        <input type="date"/>
+        <input type="date"/>
+        <select>
+            <option value="adults" selected>ADULTS</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          <select>
+            <option value="children" selected>CHILDREN</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          <button>CHECK AVAILABILITY</button>
+    </div>
+
+    <div class="aboutussec">
+        <div class="aboutright">
+            <div class="image-container">
+                <img src="./logo1.jpeg" alt="Logo">
+                <a class="icon-link" href="https://youtu.be/rXcp6s0VjZk">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/>
+                  </svg>
+                </a>
+              </div>               
+          </div>          
+        <div class="aboutleft">
+            <h1>ABOUT US</h1>
+            <p>Welcome to Odyssey Hotel, a haven of luxury and tranquility. Nestled amidst breathtaking landscapes, our hotel offers a captivating escape from the ordinary.
+                At Odyssey Hotel, we redefine hospitality with personalized service and attention to detail. Experience a seamless blend of modern comfort and timeless elegance during your stay with us.
+            </p>
+            <p>
+                Embark on an unforgettable odyssey of relaxation and indulgence.
+            </p>
+            <p>From exquisite dining to opulent rooms, let us curate moments that create cherished memories for a lifetime. Welcome to the journey of a lifetime at Odyssey Hotel.</p>
+            <div class="smlogoscontain">
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM164 356c-55.3 0-100-44.7-100-100s44.7-100 100-100c27 0 49.5 9.8 67 26.2l-27.1 26.1c-7.4-7.1-20.3-15.4-39.8-15.4-34.1 0-61.9 28.2-61.9 63.2 0 34.9 27.8 63.2 61.9 63.2 39.6 0 54.4-28.5 56.8-43.1H164v-34.4h94.4c1 5 1.6 10.1 1.6 16.6 0 57.1-38.3 97.6-96 97.6zm220-81.8h-29v29h-29.2v-29h-29V245h29v-29H355v29h29v29.2z"/></svg></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></p> 
+            </div>
+        </div>
+    </div>
+
+    <div class="roomscontain">
+        <div class="roomscontaintop">
+        <h1>OUR FAVORITE ROOMS</h1>
+        <p>Discover luxury and comfort in our elegantly designed rooms at Odyssey Hotel. Each room offers a peaceful retreat, combining modern amenities with captivating views for an exceptional stay.</p>
+        </div>
+        <div class="roomscontainbottom">
+            <div class="roomcard">
+                <h1>Royal Suit</h1>
+                <p>Indulge in the epitome of luxury with our Royal Suite at Odyssey Hotel. Experience lavish living spaces, personalized service, and awe-inspiring views for an unforgettable stay fit for royalty.</p>
+                <button>Details</button>
+                <div class="roomprice">
+                    <p>$220</p>
+                    <p>Per Night</p>
+                </div>
+            </div>
+            <div class="roomcard">
+                <h1>Deluxe Suit</h1>
+                <p>Experience sophistication and elegance in our Deluxe Suite at Odyssey Hotel. Unwind in spacious accommodations, adorned with thoughtful amenities, creating an enchanting retreat during your stay.</p>
+                <button>Details</button>
+                <div class="roomprice">
+                    <p>$150</p>
+                    <p>Per Night</p>
+                </div>
+            </div>
+            <div class="roomcard">
+                <h1>Single Room</h1>
+                <p>Enjoy a cozy and comfortable stay in our Single Room at Odyssey Hotel. Perfect for solo travelers, these thoughtfully designed rooms offer all the essentials for a delightful and restful experience.</p>
+                <button>Details</button>
+                <div class="roomprice">
+                    <p>$120</p>
+                    <p>Per Night</p>
+                </div>
+            </div>
+            <div class="roomcard">
+                <h1>Double Room</h1>
+                <p>Relax and unwind in our inviting Double Room at Odyssey Hotel. Ideal for couples or friends, these well-appointed rooms provide a harmonious blend of comfort and convenience, ensuring a memorable stay for two.</p>
+                <button>Details</button>
+                <div class="roomprice">
+                    <p>$100</p>
+                    <p>Per Night</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="servicecontain">
+        <div class="servicecontaintop">
+            <h1>OUR AWESOME SERVICES</h1>
+            <p>Experience unparalleled services tailored to your needs at Odyssey Hotel, where every detail is meticulously crafted to create cherished moments during your stay.</p>
+        </div>
+        <div class="servicecontainbottom">
+             <div>
+                <div>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M183.1 235.3c33.7 20.7 62.9 48.1 85.8 80.5c7 9.9 13.4 20.3 19.1 31c5.7-10.8 12.1-21.1 19.1-31c22.9-32.4 52.1-59.8 85.8-80.5C437.6 207.8 490.1 192 546 192h9.9c11.1 0 20.1 9 20.1 20.1C576 360.1 456.1 480 308.1 480H288 267.9C119.9 480 0 360.1 0 212.1C0 201 9 192 20.1 192H30c55.9 0 108.4 15.8 153.1 43.3zM301.5 37.6c15.7 16.9 61.1 71.8 84.4 164.6c-38 21.6-71.4 50.8-97.9 85.6c-26.5-34.8-59.9-63.9-97.9-85.6c23.2-92.8 68.6-147.7 84.4-164.6C278 33.9 282.9 32 288 32s10 1.9 13.5 5.6z"/></svg></div>
+                    <div>
+                        <h1>Spa- Beauty & Health</h1>
+                        <p>Indulge in ultimate relaxation and rejuvenation with our exquisite spa services, ensuring a blissful escape from the hustle and bustle of everyday life.</p>
+                    </div>
+                </div>
+                <div>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M309.5 178.4L447.9 297.1c-1.6 .9-3.2 2-4.8 3c-18 12.4-40.1 20.3-59.2 20.3c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-10.1 0-21.1-2.2-31.9-6.2C163.1 193.2 262.2 96 384 96h64c17.7 0 32 14.3 32 32s-14.3 32-32 32H384c-26.9 0-52.3 6.6-74.5 18.4zM160 160A64 64 0 1 1 32 160a64 64 0 1 1 128 0zM306.5 325.9C329 341.4 356.5 352 384 352c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 405.7 417 416 384 416c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 341.2 165.1 352 192 352c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z"/></svg></div>
+                    <div>
+                        <h1>Swwimming Pool</h1>
+                        <p>Dive into tranquility and refreshment at our sparkling swimming pool, offering a delightful oasis to bask in the sun and unwind.</p>
+                    </div>
+                </div>
+                <div>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg></div>
+                    <div>
+                        <h1>Restaurant</h1>
+                        <p>Savor a culinary journey of delectable flavors and impeccable dining experiences at our restaurant, where each dish is a masterpiece of gastronomic delight.</p>
+                    </div>
+                </div>
+                <div>
+                     <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3V245.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5V416c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V389.2C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112h32c24 0 46.2 7.5 64.4 20.3zM448 416V394.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176h32c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2V416c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3V261.7c-10 11.3-16 26.1-16 42.3zm144-42.3v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2V448c0 17.7-14.3 32-32 32H288c-17.7 0-32-14.3-32-32V405.2c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112h32c61.9 0 112 50.1 112 112z"/></svg></div>
+                    <div>
+                        <h1>Conference</h1>
+                        <p>
+                            Elevate your business gatherings and events in our state-of-the-art conference room, equipped with modern amenities to inspire productivity and success.</p>
+                    </div>
+                </div>
+             </div>
+             <div>
+                <img src="./logo1.jpeg">
+             </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/6374a7542c.js" crossorigin="anonymous"></script>
+<script></script>
+</html>
