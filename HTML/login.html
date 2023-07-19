@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="CSS\login.css">
+</head>
+<body>
+
+    <div id="box">
+        <form id="login">
+            <div id="logo">
+                <img src="logo1.jpeg" alt="">
+            </div>
+                <h1 class="login-title">
+                    <span style="font-size: x-large;">Login To Your Account</span>
+                </h1>
+                <div class="social">
+                    <p style="margin: 0%;" id="social-head">login using social network</p><br>
+                    <div class="social-img">
+                        <img class="google"  src="data:image/png;base64,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" alt="">
+                        <img class="fb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAY1BMVEU7WZj///84V5csT5MyU5X3+PtOZ6CfqsgpTZIkSpH09fnEy91ugbCXo8IvUZTp7PK5wdZDX5vY3ejg4+2uuNCDk7lWb6TT2OV2iLJgdagaRY7K0OB+jraSn8GmscwVQo0AOooz4aYkAAAEgUlEQVRogc3b6XqrIBAGYIIc4xa3ukQT03P/V3nAGGNdvwn04czTf419ixoYYGAncgR5WHRlVLkZY5lbRWVXhHlA/zuMptbFNYtjzxGCc8aZ/OFcCMeL4+xa1DSfQCfpNXMcZa6E/A8cJ7umiXk6KSLmizV0GsJnUYHqGJ2X4th96aLMjdFp04rVu7weXLRNaoROuU9wB93nx/gRnTKPDPe4x47wfTpvPoOfeLP/zPfooIvBd2s9RNztfdN36Nr9vMmvhrv1J/S51YR7vD2T6aTy9WEVfrXVxWzQN6H1lKchxI1CF7pPeRrcK3C6c8zBKpwOpUtDj/kdfonRd+OytO8I/Rvyqr2gzd/twV7c8znd/ZIs7fm7NqMLw+/2NJxij755xD+nkkIZsRhi98PebZtOKMmI7CpE5jbRXcZV/qiIdq/nItmkK0LvyX33sch+k3j3GlFt0WfCK9au5gFf+zTzp+PYhK5bGBYiXIGPadZOxu83HbjwgxbuxkB4SHP3/Yze9AV+u3m2NQQf0sy7LOk8hhvtb6Z7xzSPx4tHuoHfbuey7kI0E82cTvHOxNuUEZp5r/z8RTP4djsPPZqPJLXRnO/MJBF6bPZAr0+aV+lmW8Zozqd0ivdjznZiDdLMTyd0gw8b/no/RqGHG9fTOd6Fcv61AMOuHOKONaHNR7okjFjLnuz+PQ7X6MpD+aIpw/S0E35GTU0vXgO3ogvCYMndPzO6oNPMLwY6omQIC/r8QTonoiedUC4yQzOW9DThS22MVl9tSV8p81lDtLgqOsgo15i64Vkg6Zp0qSnaqSVNm3AYowtJo4/a8/tgc/ry7Y+B/xfyYbNThnVlIg37WCyMfIXveMBvLM9OLADTwRhZa77BzeZxwHJonJMfRegUv+NxzkLs0xh9xtqhwgkZ+IJjdEegC9aBbwZEEwYi0TEwTcBajU/bZLrA9mfjRJqwX8AjVpmk/8Iy4xVzwY8idPKN0xIGOzOo1YTMVnZn8CcROvyVRTeIJq66wTcc2CsldGbqhqOvGe8ufSymXLfhFzII8yf1moFfLrVqpMLJFqlCO849SAt+FdqljFcYylJUl0KZb5mkZUeKDh/G6Q4dNI3TctAEUwXzdIgmSMZpmSChaaFhWqWFaDJsms4IUwCzdD8FsDjxsTjdszjJtTi1t7mgYXEZx+LileaS3Sf0uGRHW6g0QL8XKinLs0bo9/IsaVHaBD1ZlCYsxZugp0vxhK+2CfrHBgS+7WKA/rntgm82GaBnm03wFps+Pd9ig5utTy82FtHtVG16uZ2KbiLr0mubyODWuS69tnUOFgxo0usFA1iZhCa9XiaBFYfo0VvFIVBJjBa9XRKDDNw69F4hEFD+pEPvlT8By08a9H7R13Gp2+f0UanbYYEfd+cXPLDe/7jA77isMZoFtvqFlDUe2VzM4lP5PythtVm4a7Nc2WaRts3S9JPFgvyTzWMIMm+56B6+uHx4+OJk8ciJCmsHbXrc1vGiHrd1qEqFtaNkKqwdoHvqlo4NPsPWYcnRN3RE9B8rHESxVxcO9gAAAABJRU5ErkJggg==" alt="">
+                        <img class="linkedin" src="data:image/png;base64,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" alt="">
+                    </div>
+                </div>
+               <br>
+               <div id="login-data">
+                    <input id="login_mail" type="email" placeholder="Email">
+                    <input id="login_pass" type="password" placeholder="Password">
+                    <input id="login_btn" type="submit" value="Login">
+                </div>
+           
+        </form>
+        <form id="signup">
+            <div class="signup-text">
+                <h1>New Here?</h1>
+                <p>sign up and discover a new experience</p>
+            </div>
+            <input class="signup-firstname" type="text" placeholder="firstname">
+            <input class="signup-lastname" type="text" placeholder="lastname">
+            <select class="signup-gender" name="Gender" id="">
+                <option value="">Gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            <input class="signup-mail" type="email" placeholder="Email">
+            <input class="signup-pass" type="password" placeholder="password">
+            <input class="signup-password" type="text" placeholder="Re-enter password">
+            <input class="signup-btn" type="submit" value="submit">
+            <h3 id="alert"></h3>
+        </form>
+    </div>
+
+</body>
+</html>
+<script src="JS_files/login.js"></script>

@@ -1,0 +1,76 @@
+ 
+    #box {
+        display: grid;
+        grid-template-columns: 60% 40%;
+      
+    }
+    #login{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+      
+        margin: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+       padding-top: 100px;
+       padding-bottom: 100px;
+      
+       
+    }
+    #social-head{
+        text-align:center;
+    }
+    .login-title {
+        text-align: center;
+      margin-top: 0%;
+    }
+    .social-img {
+        display: flex;
+        justify-content: center;         
+    }
+    .social-img img{
+        display: inline-block;
+        width: 50px;
+        padding: 2%;
+        border-radius: 100%;
+    }
+    #login-data{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    #login-data input{
+        margin: 1%;
+    }
+    #login-data .submit:hover{
+       
+        background-color: lightgray;
+    }
+
+    #signup{
+      
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        background: linear-gradient(120deg, rgb(58,174,162),aqua);
+        color: azure;
+      
+    }
+    #signup input,select{
+        margin: 1%;
+    }
+
+    @media screen and (max-width:420px) {
+        #box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        }
+    }
+
