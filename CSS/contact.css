@@ -1,0 +1,126 @@
+body{
+    margin: 0px;
+}
+#head{
+    background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.9;
+}
+.text{
+   padding: 20px;
+   padding-top: 280px;
+   text-align: center;
+   color: white;
+   color: #ffffff;
+   font-size:20px ;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-bottom: 10px;
+   
+}
+.text h2{
+    font-size: 36px;
+    line-height: 26px;
+    margin-bottom: 20px;  
+    font-weight: 700;  
+}
+.bar{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 20px;  
+    gap:8px;  
+    margin-top: 80px; 
+    text-align: left;
+}
+.bar a{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.bar h4{
+    color: #b5876d;
+    font-size: 20px;
+}
+
+#contact{
+    margin-left:10%;
+    margin-right: 10%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.con-text{
+    width: 30%;
+}
+h4{
+    font-size: 24px;
+    line-height: 18px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+  
+}
+.media{
+    margin-top: 40px;
+}
+.info{
+    line-height: 24px;
+    margin-bottom: 13px;
+    font-size: 18px;
+}
+.icon{
+   display: flex;
+   justify-content: space-between;
+   width: 80%;
+}
+.icon >span:hover{
+    cursor: pointer;
+    color: #b5876d;
+}
+.msg{
+    width: 63%;
+}
+.enter{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+width: 100%;
+margin-bottom: 2%;
+}
+#name{
+height: 35px;
+width: 55%;
+border: 0px;
+background-color: rgb(228, 225, 225);
+}
+#email{
+    border: 0px;
+    height: 35px;
+    width: 55%;
+    background-color: rgb(228, 225, 225);
+}
+#message{
+    border: 0px;
+  height: 150px;  
+  width: 100%;
+  margin-bottom: 2%;
+  display: flex;
+  align-content: start;
+  background-color: rgb(228, 225, 225);
+}
+#submit{
+ padding-top: 10px ; 
+ padding-bottom: 10px;
+ padding-left: 25px;
+ padding-right: 25px;
+ font-size: 18px;
+ color: #ffffff;
+ background-color: #b5876d;
+ border: 0px;
+}
+#submit:hover{
+    background-color: #444;
+    color: #b5876d;
+}
