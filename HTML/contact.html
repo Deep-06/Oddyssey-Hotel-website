@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- header of contact -->
+    <div id="head">
+        <div class="text">
+          <h2>CONTACT US</h2>
+          <p>A quality room of Oestin with sea or mountain view</p>
+          <div class="bar"> 
+             <div><a href="">Home</a></div>        
+             <div><h4>// Contact Us</h4> </div>                                               
+          </div>
+        </div>
+    </div>
+    <!-- map -->
+    <div id="map">
+
+    </div>
+    <!-- contact information -->
+    <div id="contact">
+        <div class="con-text">
+          <h4>CONTACT INFO</h4>
+          <div class="info">
+            <span></span>
+            <span>0123456789</span>
+          </div>
+          <div class="info">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <!-- <span><img src="/images/e.svg" alt=""></span> -->
+            <span>demo@example.com</span>
+          </div>
+          <div class="info">
+            <span></span>
+            <span>Your address goes here</span>
+          </div>
+          <h4 class="media">SOCIAL MEDIA</h4>
+          <div class="icon">
+            <span>f</span>
+            <span>w</span>
+            <span>G+</span>
+            <span>P</span>
+            <span></span>
+          </div>
+       </div>
+       <div class="msg">
+          <h4>SEND YOUR MASSAGE</h4>
+          <div class="enter">
+            <input type="text" placeholder="Enter Name" id="name">
+            <input type="email" placeholder="Enter Email" id="email">
+          </div>
+          <input type="text" placeholder="Message here" id="message">
+          <button id="submit">SUBMIT</button>   
+       </div>
+    </div>
+</body>
+<script>
+  let btn = document.getElementById("submit");
+  btn.addEventListener("click",function(){
+    alert("Message Send Successfully")
+  })
+</script>
+</html>

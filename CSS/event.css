@@ -5,30 +5,32 @@ body{
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
     background-size: cover;
     background-position: center top;
-    /* opacity: .9; */
+    opacity: .9;
 }
 .text{
    padding: 20px;
-   padding-top: 230px;
+   padding-top: 280px;
    text-align: center;
    color: white;
    color: #ffffff;
    font-family: Arial, Helvetica, sans-serif;
+   font-size:20px ;
+   padding-bottom: 10px;
    
 }
 .text h2{
-    font-size: 36px;
+    font-size: 46px;
     line-height: 26px;
-    margin-bottom: 19px;  
+    margin-bottom: 35px;  
     font-weight: 700;  
 }
 .bar{
     display: flex;
     align-items: center;
-    margin-left: 10%;
-    font-size: 18px;  
-    gap:5px;  
-    margin-top: 40px; 
+    margin-left: 12%;
+    font-size: 28px;  
+    gap:8px;  
+    margin-top: 80px; 
     text-align: left;
 }
 .bar a{
@@ -46,8 +48,8 @@ font-family: Arial, Helvetica, sans-serif;
 padding-bottom: 4%;
 }
 .container{
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 8%;
+    padding-left: 8%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -58,16 +60,17 @@ padding-bottom: 4%;
     margin: auto;
 }
 .sec-text{
-width: 42%;
+width: 50%;
 margin: auto;
 }
 .sec-text h3{
     font-weight: 700;
-    font-size: 28px;
+    font-size: 35px;
     color: #444;
 }
 .sec-text p{
-   font-size: 15px;
+   font-size: 18px;
+   line-height: 25px;
    color: #444444;
 }
 .event-menu{
@@ -174,6 +177,10 @@ overflow-clip-margin: content-box;
 } */
 .hidden{
     display:none;
+}
+.single-event:hover{
+    /* background-color: #585151; */
+    opacity: .7;
 }
 .single-event:hover .event-title{
     margin-top: -220px;   
