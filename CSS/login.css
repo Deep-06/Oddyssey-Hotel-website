@@ -1,8 +1,15 @@
- 
+    #login-alert{
+        text-align: center;
+    }
     #box {
         display: grid;
         grid-template-columns: 60% 40%;
       
+    }
+    #logo img{
+        display: block;
+        width: 200px;
+       margin: auto;
     }
     #login{
         display: flex;
@@ -13,7 +20,7 @@
         margin: auto;
         padding-left: 50px;
         padding-right: 50px;
-       padding-top: 100px;
+       padding-top: 20px;
        padding-bottom: 100px;
       
        
