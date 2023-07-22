@@ -4,6 +4,8 @@ body{
 *{
     box-sizing: border-box;
 }
+
+/* header */
 #head{
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
     background-size: cover;
@@ -46,11 +48,14 @@ body{
     color: rgb(150,73,26);
     font-size: 20px;
 }
+
+/* map */
 #map img{
     width: 100%;
     height: 600px;
 }
 
+/* contact info */
 #contact{
     margin-left:10%;
     margin-right: 10%;
@@ -92,6 +97,8 @@ h4{
     cursor: pointer;
     color: #b5876d;
 }
+
+/* message */
 .msg{
     width: 63%;
 }
@@ -148,6 +155,9 @@ padding-left: 15px;
      width: 90%; 
     background-color:rgb(241,241,241) ;
 } */
+
+
+/* media query/responsiveness */
 
 @media all and (max-width:767px){
     .text h2{

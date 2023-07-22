@@ -4,6 +4,9 @@ body{
 *{
     box-sizing: border-box;
 }
+
+/* header */
+
 #head{
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
     background-size: cover;
@@ -45,6 +48,9 @@ body{
     color: #b5876d;
     color: rgb(150,73,26);
 }
+
+/* team member */
+
 #team{
 text-align: center;
 padding-top: 5%;
@@ -87,6 +93,9 @@ margin: auto;
     row-gap: 20px;
     margin-top: 40px;
 }
+
+/* hover div */
+
 .hidden{
   padding: 8%;
   padding-top: 10px;
@@ -133,6 +142,9 @@ margin: auto;
     margin-top: -260px;
     opacity: .9;
 }
+
+/* buttons */
+
 .teamno{
     margin: auto;
     width: 40%;
@@ -154,6 +166,8 @@ margin: auto;
     cursor: pointer;
     color: rgb(181,135,109);
 }
+
+/* media query/responsiveness */
 
 @media all and (max-width:767px){
     .text h2{
