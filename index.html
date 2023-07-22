@@ -11,12 +11,22 @@
         width: 100%;
         margin: auto;
         justify-content: space-around;
+        position: fixed;
+        top: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: x-large;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
     }
     .logo{
-        grid-column: 1 / span 1;
+        grid-column: 0 / span 1;
+        background-color: #B5876D;
     }
     .logo img{
-        width: 40%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 60%;
     }
     .rightcontain{
         grid-column: 3 /span 3;
@@ -30,6 +40,12 @@
     .contactcontain{
         display: flex;
         grid-column: 1 / span 1;
+    }
+    #fp{
+        color: #B5876D;
+    }
+    #sp{
+        margin-left:10px
     }
     .smlogoscontain{
         display: flex;
@@ -55,8 +71,73 @@
         display: flex;
         grid-column: 4 /span 1;
     }
+    .rightbottomcontainmodal .modal {
+     display: none;
+}
+.rightbottomcontainmodal a:hover{
+    background-color: #B5876D;
+}
+.rightbottomcontain1:hover + .rightbottomcontainmodal .modal,
+.rightbottomcontainmodal .modal:hover {
+  display: block;
+}
+.rightbottomcontainmodal .modal {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.rightbottomcontain1 {
+  position: relative;
+}
+#modal-rooms{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#modal-rooms a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#modal-rooms div{
+    padding: 20px;
+    box-sizing: border-box;
+}
+#modal-rooms div:hover{
+    background-color: #B5876D;
+}
+#modal-activities{
+    margin: auto;
+    width: 40%;
+    justify-content: space-evenly;
+    padding: 40px;
+    box-sizing: border-box;
+}
+#modal-activities a{
+   text-decoration: none;
+   color: #000000;
+   padding: 15px;
+   box-sizing: border-box;
+}
+.activitydiv{
+    display: flex;
+    flex-direction: column;
+}
+.rightbottomcontain1 div:hover{
+    color: #B5876D;
+    cursor: pointer;
+}
+.smlogoscontain svg{
+    color: white;
+}
     .welcomesec{
         text-align: center;
+        margin-top: 200px;
     }
     .checkavailsec{
         text-align: center;
@@ -290,13 +371,13 @@
 }
 </style>
 <body>
-    <div class="headercontain">
+    <div class="headercontain" id="sticky-navbar">
         <div class="logo"><img src="./logo1.jpeg"/></div>
         <div class="rightcontain">
             <div class="righttopcontain">
             <div class="contactcontain">
-                <p>Contact:</p>
-                <P>0123456789</P>
+                <p id="fp">Contact: </p>
+                <P id="sp">0123456789</P>
             </div>
             <div class="smlogoscontain">
                 <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></p>
@@ -310,12 +391,42 @@
             <div class="rightbottomcontain">
                 <div  class="rightbottomcontain1">
                 <div>Home</div>
-                <div>Rooms</div>
-                <div>Activities</div>
+                <div data-modal-target="modal-rooms">Rooms</div>
+                <div data-modal-target="modal-activities">Activities</div>
                 <div>Location</div>
                 <div>Event</div>
                 <div>Team</div>
                 <div>Contact</div>
+                <div>LogIn</div>
+                </div>
+                <div class="rightbottomcontainmodal">
+                    <div class="modal" id="modal-rooms">
+                       <div><a href="">Room List</a></div>
+                       <div><a href="">Room Details</a></div>
+                    </div>
+                    <div class="modal" id="modal-activities">
+                      <div class="activitydiv">
+                        <a href="">Location</a>
+                        <a href="">Room Grid</a>
+                        <a href="">Room List</a>
+                        <a href="">Room Details</a>
+                        <a href="">Room Menu</a>
+                      </div>
+                      <div class="activitydiv">
+                        <a href="">Event</a>
+                        <a href="">Megamenu</a>
+                        <a href="">Contact</a>
+                        <a href="">Team</a>
+                        <a href="">Megamenu</a>
+                      </div>
+                      <div class="activitydiv">
+                        <a href="">Room List</a>
+                        <a href="">Megamenu</a>
+                        <a href="">Room Grid</a>
+                        <a href="">Room Details</a>
+                        <a href="">Megamenu</a>
+                      </div>
+                    </div>
                 </div>
                 <div class="rightbottomcontain2">
                 </div>
@@ -699,7 +810,7 @@
       let timer1=setInterval(()=>{
             r1++
             if(r1>122){
-             clearInterval(timer)   
+             clearInterval(timer1)   
             }
             rating1.innerText=r1
         },10)
@@ -764,5 +875,40 @@ galleryButtons.forEach(button => {
   });
 });
 
+
+const modalTriggers = document.querySelectorAll('[data-modal-target]');
+
+modalTriggers.forEach(trigger => {
+  trigger.addEventListener('mouseenter', () => {
+    const targetModalId = trigger.getAttribute('data-modal-target');
+    const targetModal = document.getElementById(targetModalId);
+    targetModal.style.display = 'flex';
+    const linkRect = trigger.getBoundingClientRect();
+    targetModal.style.top = `${linkRect.bottom}px`;
+    targetModal.style.left = `${linkRect.left}px`;
+    targetModal.addEventListener('mouseleave', () => {
+    const targetModalId = trigger.getAttribute('data-modal-target');
+    const targetModal = document.getElementById(targetModalId);
+    targetModal.style.display = 'none';
+  });
+
+  });
+
+//   trigger.addEventListener('mouseleave', () => {
+//     const targetModalId = trigger.getAttribute('data-modal-target');
+//     const targetModal = document.getElementById(targetModalId);
+//     targetModal.style.display = 'none';
+//   });
+});
+window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('sticky-navbar');
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollPosition > 0) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
+});
 </script>
 </html>
