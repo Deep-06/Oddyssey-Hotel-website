@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="/CSS/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/51407d8c2f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header of contact -->
@@ -21,14 +21,14 @@
     </div>
     <!-- map -->
     <div id="map">
-
+      <img src="/images/map.png" alt="">
     </div>
     <!-- contact information -->
     <div id="contact">
         <div class="con-text">
           <h4>CONTACT INFO</h4>
           <div class="info">
-            <span></span>
+            <span><i class="fa-solid fa-phone"></i></span>
             <span>0123456789</span>
           </div>
           <div class="info">
@@ -37,16 +37,16 @@
             <span>demo@example.com</span>
           </div>
           <div class="info">
-            <span></span>
+            <span><i class="fa-solid fa-location-dot"></i></span>
             <span>Your address goes here</span>
           </div>
           <h4 class="media">SOCIAL MEDIA</h4>
           <div class="icon">
-            <span>f</span>
-            <span>w</span>
-            <span>G+</span>
-            <span>P</span>
-            <span></span>
+            <span><i class="fa-brands fa-facebook-f fa-l"></i></span>
+            <span><i class="fa-solid fa-wifi fa-l"></i></span>
+            <span><i class="fa-brands fa-google-plus-g fa-l"></i></span>
+            <span><i class="fa-brands fa-pinterest-p fa-l"></i></span>
+            <span><i class="fa-brands fa-instagram fa-l"></i></span>
           </div>
        </div>
        <div class="msg">
@@ -56,14 +56,30 @@
             <input type="email" placeholder="Enter Email" id="email">
           </div>
           <input type="text" placeholder="Message here" id="message">
-          <button id="submit">SUBMIT</button>   
+          <button id="submit">SUBMIT</button> 
+          <div id="inpmsg">
+            <!-- show input massage here -->
+            <h4 id="dname"></h4>
+            <h4 id="dmsg"></h4>
+          </div>  
        </div>
     </div>
 </body>
 <script>
   let btn = document.getElementById("submit");
+  // let Dname=document.getElementById("dname");
+  // let Dmsg=document.getElementById("dmsg");
+  // let inpname=document.getElementById("name");
+  // let inpmsg=document.getElementById("message");
+
   btn.addEventListener("click",function(){
     alert("Message Send Successfully")
+
+    // Dname.innerText=inpname.value;
+    // Dmsg.innerText=inpmsg.value;
   })
+
+  
+  
 </script>
 </html>
