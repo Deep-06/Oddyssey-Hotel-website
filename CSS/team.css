@@ -1,6 +1,9 @@
 body{
     margin: 0px;
 }
+*{
+    box-sizing: border-box;
+}
 #head{
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
     background-size: cover;
@@ -9,26 +12,26 @@ body{
 }
 .text{
    padding: 20px;
-   padding-top: 280px;
+   padding-top: 220px;
    text-align: center;
    color: white;
    color: #ffffff;
-   font-size:20px ;
+   font-size:15px ;
    font-family: Arial, Helvetica, sans-serif;
    padding-bottom: 10px;
    
 }
 .text h2{
-    font-size: 46px;
+    font-size: 36px;
     line-height: 26px;
-    margin-bottom: 35px;  
+    margin-bottom: 20px;  
     font-weight: 700;  
 }
 .bar{
     display: flex;
     align-items: center;
     margin-left: 12%;
-    font-size: 28px;  
+    font-size: 20px;  
     gap:8px;  
     margin-top: 80px; 
     text-align: left;
@@ -36,16 +39,20 @@ body{
 .bar a{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-
+    text-decoration-line: none;
 }
 .bar h4{
     color: #b5876d;
+    color: rgb(150,73,26);
 }
 #team{
 text-align: center;
 padding-top: 5%;
 font-family: Arial, Helvetica, sans-serif;
 padding-bottom: 4%;
+}
+.single-team img{
+    width: 100%;
 }
 .container{
     padding-right: 8%;
@@ -65,12 +72,12 @@ margin: auto;
 }
 .sec-team h3{
     font-weight: 700;
-    font-size: 35px;
+    font-size: 30px;
     color: #444;
 }
 .sec-team p{
-   font-size: 18px;
-   line-height: 30px;
+   font-size: 15px;
+   line-height: 25px;
    color: #444444;
 }
 .row-team{
@@ -84,6 +91,7 @@ margin: auto;
   padding: 8%;
   padding-top: 10px;
   background-color: #877b7b;  
+  background-color: rgb(127,127,127);
   /* background-color: (0, 0, 0, 0.5); */
   color: #ffffff;
   opacity: 1;
@@ -102,13 +110,27 @@ margin: auto;
     line-height: 24px;
     font-size: 18px;
 }
+.link{
+    display: flex;
+    width: 45%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+.link a{
+    color: #ffffff;
+}
+.link a:hover{
+    cursor: pointer;
+    color: rgb(181,135,109);
+}
 .hidden{
     display: none;
 }
 
 .single-team:hover .hidden{
     display: block;
-    margin-top: -270px;
+    margin-top: -260px;
     opacity: .9;
 }
 .teamno{
@@ -122,12 +144,13 @@ margin: auto;
     border: 0px;
     color: black;
     background-color: #ffffff;
+    text-decoration-line: none;
 }
 .n2{
     font-size: 40px;
-    color: #b5876d;
+    color: rgb(181,135,109);
 }
 .btn:hover{
     cursor: pointer;
-    color: #b5876d;
+    color: rgb(181,135,109);
 }
