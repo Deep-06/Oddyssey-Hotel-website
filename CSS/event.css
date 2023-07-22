@@ -4,6 +4,9 @@ body{
 *{
     box-sizing: border-box;
 }
+
+/* css for header */
+
 #head{
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
     background-size: cover;
@@ -45,6 +48,9 @@ body{
     color: #b5876d;
     color: rgb(150,73,26);
 }
+
+/* css for events section */
+
 #event{
 text-align: center;
 padding-top: 4%;
@@ -77,6 +83,8 @@ margin: auto;
    line-height: 25px;
    color: #444444;
 }
+
+/* css for event buttons */
 .event-menu{
     margin: 3%;
     margin-top: 35px;
@@ -100,6 +108,8 @@ margin: auto;
 .event-menu button:hover{
 cursor: pointer;
 }
+
+/* css for single card */
 .row-event{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -238,6 +248,8 @@ overflow-clip-margin: content-box;
      bottom: 37px;
   transition-delay: 0.25s;
 } */
+
+/* media query/Responsiveness */
 
 @media all and (max-width:767px){
     .text h2{
