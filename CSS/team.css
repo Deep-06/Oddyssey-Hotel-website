@@ -154,3 +154,27 @@ margin: auto;
     cursor: pointer;
     color: rgb(181,135,109);
 }
+
+@media all and (max-width:767px){
+    .text h2{
+        font-size: 26px;     
+    } 
+    .text p{
+        display: none;
+    } 
+    .bar{
+        display: flex;
+        justify-content: center;
+        margin-top: 0px; 
+        margin-left: 2%;
+    }
+    .sec-team{
+        width: 90%;
+        margin: auto;
+    }
+    .row-team{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
