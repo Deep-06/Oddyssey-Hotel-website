@@ -23,7 +23,7 @@
         color: white;
     }
     .logo{
-        grid-column: 0 / span 1;
+        grid-column: 0 / span 1
     }
     .logo img{
         display: flex;
@@ -147,6 +147,7 @@
         width: 100%;
         margin: auto;
         margin-top: 300px;
+
     }
     .welcomesec p{
         text-align: center;
@@ -795,13 +796,14 @@
             <div class="rightbottomcontain">
                 <div  class="rightbottomcontain1">
                 <div>Home</div>
-                <div data-modal-target="modal-rooms">Rooms</div>
+                <div data-modal-target="modal-rooms"><a href="">Rooms</a></div>
                 <div data-modal-target="modal-activities">Activities</div>
-                <div>Location</div>
-                <div>Event</div>
-                <div>Team</div>
-                <div>Contact</div>
-                <div>LogIn</div>
+                <div><a href="">Location</a></div>
+                <div><a href="/HTML/Event.html">Event</a></div>
+                <div><a href="/HTML/team.html">Team</a></div>
+                <div><a href="/HTML/contact.html">Contact</a></div>
+                <div><a href="/HTML/login.html">LogIn</a></div>
+
                 </div>
                 <div class="rightbottomcontainmodal">
                     <div class="modal" id="modal-rooms">
@@ -817,18 +819,20 @@
                         <a href="">Room Menu</a>
                       </div>
                       <div class="activitydiv">
-                        <a href="">Event</a>
-                        <a href="">Megamenu</a>
-                        <a href="">Contact</a>
-                        <a href="">Team</a>
-                        <a href="">Megamenu</a>
+
+                   
+                        <a href="/HTML/Event.html">Event</a>
+                        <a href="/index.html">Megamenu</a>
+                        <a href="/HTML/contact.html">Contact</a>
+                        <a href="/HTML/team.html">Team</a>
+                        <a href="/index.html">Megamenu</a>
                       </div>
                       <div class="activitydiv">
                         <a href="">Room List</a>
-                        <a href="">Megamenu</a>
+                        <a href="/index.html">Megamenu</a>
                         <a href="">Room Grid</a>
                         <a href="">Room Details</a>
-                        <a href="">Megamenu</a>
+                        <a href="/index.html">Megamenu</a>
                       </div>
                     </div>
                 </div>
@@ -837,7 +841,7 @@
             </div>
         </div>
     </div>
-    <div class="welcomesec">
+    <div class="welcomesec" id="welcome">
         <h1 class="welcomemsg">WELCOME TO ODYSSEY</h1>
         <p>Welcome to Odyssey Hotel, where your journey to comfort and luxury begins. Experience a stay like no other as we take you on a memorable odyssey of relaxation and hospitality.</p>
         <button>EXPLORE</button>
@@ -1096,8 +1100,9 @@
         </div>
     </div>
     <div class="discountsec">
-        <h1>GET <span>15% OFF</span> ON ANY OTHER EVENTS...</h1>
-        <button>BOOK NOW</button>
+
+        <h1>GET 15% OFF ON ANY OTHER EVENTS...</h1>
+        <a href="#welcome">BOOK NOW</a>
     </div>
 
     <div class="pricingsec">
@@ -1105,37 +1110,41 @@
             <h1>OUR PRICING</h1>
             <p>Discover your ideal retreat with our thoughtfully crafted pricing packages. Unwind and indulge in the ultimate luxury experience.</p>
         </div>
-        <div class="pricingsecbottom">        
-                <div class="pricecard">
-                    <h1>Silver Pack</h1>
-                    <div><h3><span>$150</span> /per night</h3></div>
-                    <p>Flight Ticket</p>
-                    <p>Music Concert(30% Off)</p>
-                    <p>Restaurant(Lunch)</p>
-                    <p class="grey">Treatment</p>
-                    <p class="grey">Face Make</p>
-                    <button>SIGN UP</button>
-                 </div>
-                 <div class="pricecard">
-                    <h1>Gold Pack</h1>
-                    <h3><span>$140</span> /per night</h3>
-                    <p>Flight Ticket</p>
-                    <p>Music Concert(30% Off)</p>
-                    <p>Restaurant(Lunch)</p>
-                    <p>Treatment</p>
-                    <p class="grey">Face Make</p>
-                    <button>SIGN UP</button>
-                 </div>
-                 <div class="pricecard">
-                    <h1>Diamond Pack</h1>
-                    <h3><span>$190</span> /per night</h3>
-                    <p>Flight Ticket</p>
-                    <p>Music Concert(30% Off)</p>
-                    <p>Restaurant(Lunch)</p>
-                    <p>Treatment</p>
-                    <p>Face Make</p>
-                    <button>SIGN UP</button>
-                 </div>
+
+        <div class="pricingsecbottom">
+         <div class="pricecard">
+            <h1>Silver Pack</h1>
+            <h3>$150 /per night</h3>
+            <p>Flight Ticket</p>
+            <p>Music Concert(30% Off)</p>
+            <p>Restaurant(Lunch)</p>
+            <p>Treatment</p>
+            <p>Face Make</p>
+            <a href="/HTML/login.html">SIGN UP</a>
+            
+         </div>
+         <div class="pricecard">
+            <h1>Gold Pack</h1>
+            <h3>$150 /per night</h3>
+            <p>Flight Ticket</p>
+            <p>Music Concert(30% Off)</p>
+            <p>Restaurant(Lunch)</p>
+            <p>Treatment</p>
+            <p>Face Make</p>
+            <a href="/HTML/login.html">SIGN UP</a>
+          
+         </div>
+         <div class="pricecard">
+            <h1>Diamond Pack</h1>
+            <h3>$190 /per night</h3>
+            <p>Flight Ticket</p>
+            <p>Music Concert(30% Off)</p>
+            <p>Restaurant(Lunch)</p>
+            <p>Treatment</p>
+            <p>Face Make</p>
+            <a href="/HTML/login.html">SIGN UP</a>
+         
+         </div>
         </div>
     </div>
 
@@ -1325,8 +1334,8 @@ modalTriggers.forEach(trigger => {
     const targetModal = document.getElementById(targetModalId);
     targetModal.style.display = 'flex';
     const linkRect = trigger.getBoundingClientRect();
-     targetModal.style.top = `${linkRect.bottom}px`;
-     targetModal.style.left = `${linkRect.left}px`;
+    targetModal.style.top = `${linkRect.bottom}px`;
+    targetModal.style.left = `${linkRect.left}px`;
     targetModal.addEventListener('mouseleave', () => {
     const targetModalId = trigger.getAttribute('data-modal-target');
     const targetModal = document.getElementById(targetModalId);
@@ -1345,6 +1354,5 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('sticky');
     }
 });
-
 </script>
 </html>

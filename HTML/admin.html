@@ -1,11 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="../CSS/admin.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+  
+
 </head>
 <body>
+  <section id="menu">
+    <div class="logo">
+      <h2>Odyssey</h2>
+
+    </div>
+
+    <div class="items">
+      <li><i class="fa-solid fa-chart-pie"></i><a href="./admin.html">Dashboard</a></li>
+      <li><i class="fa-solid fa-rotate-right"></i><a href="#">Cancilation</a></li>
+      <li><i class="fa-solid fa-file-invoice-dollar"></i><a href="#">Payments</a></li>
+      <!-- <li><i class="fa-brands fa-wpforms"></i><a href="#">Inventory</a></li> -->
+      <li><i class="fa-regular fa-credit-card"></i><a href="./analytics.html">Analytics</a></li>
+      <li><i class="fa-sharp fa-solid fa-headset"></i><a href="#">Support</a></li>
+      <hr>
+      <li> <i class="fa-solid fa-right-from-bracket"></i><a href="./index.html">Logout</a></li>
+
+    </div>
+
+
+    <div class="dark-toggle">
+      <input type="checkbox" class="checkbox">
+      <p class="text" id="toggletext">Dark mode</p>
+    </div>
+
+  </section>
+
+  <!-- interface -->
+
+  <section id="interface">
+    <div class="navigation">
+      <div class="ni">
+        <div>
+          <i id="menu-btn" class="fa-brands fa-usb "></i>
+        </div>
+        <form>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search Rooms" id="searchinp">
+          </div>
+        </form>
+      </div>
+
+      <div class="profile">
+        <div>
+          <i id="bell-icon" class="fa-regular fa-bell"></i>
+
+        </div>
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWNTiq9IDokwKAKD68rWcfvb_790X2MOxIA&usqp=CAU"
+            alt="">
+
+        </div>
+      </div>
+    </div>
+    <h3 class="i-name">
+      Dashboard
+    </h3>
+    <a href="./index.html">
+    <button id="hbtn">Home</button></a>
+    <button id="btn">+ Add Product</button>
+    <button class="counter">Click</button>
+
+    <div class="values">
+      <div class="val-box">
+        <i class="fa-solid fa-arrow-trend-down"></i>
+
+        <div>
+          <h3 id="o-stock">0</h3>
+          <span>Out of Stock</span>
+        </div>
+
+      </div>
+      <div class="val-box">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div>
+          <h3 id="total-orders">0</h3>
+          <span>Total Bookings</span>
+        </div>
+
+      </div>
+      <div class="val-box">
+        <i class="fa-solid fa-shop"></i>
+        <div>
+          <h3 id="total-products"></h3>
+          <span>Total Rooms</span>
+        </div>
+
+      </div>
+      <div class="val-box">
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <div>
+          <h3 id="s-count">5</h3> 
+          <span>Available Rooms Count</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="board">
+      <table width="100%">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Country</th>
+            <th>Rating</th>
+            <th>Price</th>
+            <th>Location</th>
+            <th>Delete</th>
+            <th>Edit</th>
+          </tr>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div id="vac" class="formpop">
+      <div class="formcontent">
+        <!-- <form > -->
+        <!-- <label for="otp">Enter ID</label> -->
+
+        <input type="text" placeholder="Enter ID" id="id" required>
+        <!-- <label for="otp">Enter Category</label> -->
+
+        <input type="text" placeholder="Enter Country" id="category" required>
+
+        <!-- <label for="otp">Enter Gender</label> -->
+
+        <input type="text" placeholder="Enter Location" id="gender" required>
+        <!-- <label for="otp">Enter Image</label> -->
+
+        <input type="text" placeholder="Enter Image Url" id="image" required>
+        <!-- <label for="otp">Enter Name</label> -->
+
+        <!-- <input type="text" placeholder="Enter Name" id="name" required> -->
+        <!-- <label for="otp">Enter Price</label> -->
+
+        <input type="text" placeholder="Enter Price" id="price" required>
+        <!-- <label for="otp">Enter Rating</label> -->
+
+        <input type="text" placeholder="Enter rating" id="rating" required>
+        <!-- <label for="otp">Enter Tag</label> -->
+
+        <!-- <input type="text" placeholder="Enter Tag" id="tag" required> -->
+        <button type="submit" class="update-btns">update</button>
+        <button type="submit" class="btns">Add</button>
+
+        <!-- </form> -->
+      </div>
+    </div>
+
+  </section>
+
+
+  <script>
+    $('#menu-btn').click(function () {
+      $('#menu').toggleClass("active");
+    })
+  </script>
 
 </body>
+
 </html>
+
+
+<script src="../JS_files/admin.js"></script>
