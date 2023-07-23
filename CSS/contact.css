@@ -6,13 +6,13 @@ body{
 }
 
 /* header */
-#head{
+#contacthead{
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
     background-size: cover;
     background-position: center top;
     opacity: 0.9;
 }
-.text{
+.contacttext{
    padding: 20px;
    padding-top: 220px;
    text-align: center;
@@ -23,13 +23,13 @@ body{
    padding-bottom: 10px;
    
 }
-.text h2{
+.contacttext h2{
     font-size: 36px;
     line-height: 26px;
     margin-bottom: 20px;  
     font-weight: 700;  
 }
-.bar{
+.contactbar{
     display: flex;
     align-items: center;
     margin-left: 10%;
@@ -38,12 +38,12 @@ body{
     margin-top: 80px; 
     text-align: left;
 }
-.bar a{
+.contactbar a{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration-line: none;
 }
-.bar h4{
+.contactbar h4{
     color: #b5876d;
     color: rgb(150,73,26);
     font-size: 20px;
@@ -115,6 +115,7 @@ width: 55%;
 border: 0px;
 background-color: rgb(241,241,241);
 padding-left: 15px;
+margin-left: 0px;
 }
 #email{
     border: 0px;
@@ -122,6 +123,7 @@ padding-left: 15px;
     width: 55%;
     background-color: rgb(241,241,241);
     padding-left: 15px;
+    margin-left: 0px;
 }
 #message{
     border: 0px;
@@ -130,12 +132,12 @@ padding-left: 15px;
   width: 100%;
   margin-bottom: 15px;
   display: flex;
-  align-content: start;
+  /* align-content: start; */
   background-color: rgb(241,241,241);
   padding-left: 15px;
   padding-top: 15px;
-  white-space: pre-wrap;
-  
+  /* white-space: pre-wrap; */
+  margin-left: 0px;
 }
 #submit{
  padding-top: 10px ; 
@@ -160,13 +162,13 @@ padding-left: 15px;
 /* media query/responsiveness */
 
 @media all and (max-width:767px){
-    .text h2{
+    .contacttext h2{
         font-size: 26px;     
     } 
-    .text p{
+    .contacttext p{
         display: none;
     } 
-    .bar{
+    .contactbar{
         display: flex;
         justify-content: center;
         margin-top: 0px; 

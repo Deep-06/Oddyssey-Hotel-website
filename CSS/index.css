@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 .mySlides {display: none}
 img {vertical-align: middle;}
@@ -74,6 +74,7 @@ to {opacity: 1}
 }
 .logo{
     grid-column: 0 / span 1;
+    
 }
 .logo img{
     display: flex;
@@ -82,6 +83,7 @@ to {opacity: 1}
     width: 60%;
     background: rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    border-radius: 45%;
 }
 .rightcontain{
     grid-column: 3 /span 3;

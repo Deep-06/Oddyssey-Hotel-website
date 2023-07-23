@@ -7,13 +7,13 @@ body{
 
 /* css for header */
 
-#head{
+#eventhead{
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
     background-size: cover;
     background-position: center top;
     opacity: .9;
 }
-.text{
+.eventtext{
    padding: 20px;
    padding-top: 220px;
    text-align: center;
@@ -24,13 +24,13 @@ body{
    padding-bottom: 10px;
    
 }
-.text h2{
+.eventtext h2{
     font-size: 36px;
     line-height: 26px;
     margin-bottom: 20px;  
     font-weight: 700;  
 }
-.bar{
+.eventbar{
     display: flex;
     align-items: center;
     margin-left: 12%;
@@ -39,12 +39,12 @@ body{
     margin-top: 80px; 
     text-align: left;
 }
-.bar a{
+.eventbar a{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration-line: none;
 }
-.bar h4{
+.eventbar h4{
     color: #b5876d;
     color: rgb(150,73,26);
 }
@@ -57,13 +57,13 @@ padding-top: 4%;
 font-family: Arial, Helvetica, sans-serif;
 padding-bottom: 4%;
 }
-.container{
+.eventcontainer{
     padding-right: 8%;
     padding-left: 8%;
     margin-right: auto;
     margin-left: auto;
 }
-.row{
+.eventrow{
     line-height: 17px;
     margin-bottom: 28px;   
     width: 80%; 
@@ -252,13 +252,13 @@ overflow-clip-margin: content-box;
 /* media query/Responsiveness */
 
 @media all and (max-width:767px){
-    .text h2{
+    .eventtext h2{
         font-size: 26px;     
     } 
-    .text p{
+    .eventtext p{
         display: none;
     } 
-    .bar{
+    .eventbar{
         display: flex;
         justify-content: center;
         margin-top: 0px; 
@@ -268,7 +268,7 @@ overflow-clip-margin: content-box;
         width: 90%;
         margin: auto;
     }
-    .row{ 
+    .eventrow{ 
         width: 100%; 
         margin: auto;
     }
