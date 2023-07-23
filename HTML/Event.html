@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
     <link rel="stylesheet" href="/CSS/event.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="icon" href="/logo1.jpeg">
     <style></style>
 </head>
 <body>
    <!-- header part -->
+   <nav> </nav>
     <div id="head">
       <div class="text">
         <h2>EVENTS</h2>
@@ -103,50 +106,11 @@
          </div>
        </div>
     </section>
+    <footer></footer>
     <!-- events section ends -->
 </body>
-<script>
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get all buttons with data-filter attribute
-    const filterButtons = document.querySelectorAll(".event-menu button");
-
-    // Get all event cards
-    const eventCards = document.querySelectorAll(".single-event");
-
-    // Add a click event listener to each button
-    filterButtons.forEach(function (button) {
-      button.addEventListener("click", function () {
-        // Remove the 'active' class from all buttons
-        filterButtons.forEach(function (btn) {
-          btn.classList.remove("active");
-        });
-
-        // Add the 'active' class to the clicked button
-        button.classList.add("active");
-
-        // Get the data-filter value of the clicked button
-        const filterValue = button.getAttribute("data-filter");
-
-        // Show or hide event cards based on the data-filter value
-        if (filterValue === "*") {
-          eventCards.forEach(function (card) {
-            card.style.display = "block"; // Show all event cards
-          });
-        } else {
-          eventCards.forEach(function (card) {
-            card.style.display = "none"; // Hide all event cards
-          });
-
-          // Show event cards with the corresponding filter class
-          const filteredCards = document.querySelectorAll(filterValue);
-          filteredCards.forEach(function (card) {
-            card.style.display = "block";
-          });
-        }
-      });
-    });
-  });
+<script src="/JS_files/navjs.js"></script>
+<script type="module" src="/JS_files/event.js">
 
 
 </script>
