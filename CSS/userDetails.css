@@ -1,106 +1,84 @@
 
-*{
-  font-family: 'Poppins', sans-serif;
-}
-
-
-
  .tags{
-
+    
     width: 1000px;
     margin-top: 50px;
     margin-left: 300px;
     display: flex;
     justify-content: space-between;
-
+   
     position: fixed;
     top: 0;
    }
 
 
- 
 
-
-@media only screen and (max-width:800px){
- 
-}
-@media only screen and (max-width:1100px){
- 
-  .container{
-      grid-template-columns: repeat(3,1fr);
-      
-  }
-
-}
-@media only screen and (max-width:1000px){
-  
-  .container{
-      grid-template-columns: repeat(2,1fr);
-      
-  }
-}
-@media only screen and (max-width:850px){
- 
-  .container{
-      grid-template-columns: repeat(1,1fr);
-      
-  }
-}
-
-
-
-
-  #booking-container{
-      width: 90%;
-
-      display: flex;
-      justify-content: space-around;
-      margin: auto;
-      gap: 15px;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      padding: 20px;
-      margin-top: 40px;
-      margin-bottom: 30px;
-  
-  }
-  #box3{
-      width: 30%;
+#container {
+    width: 35%;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     
-      text-align: center;
-      
-  }
-  #box2{
-      width: 30%;
-     
-  }
-  #box1{
-      width: 30%;
+    border-radius: 10px;
+}
+#container:hover{
+    border: 1px solid rgb(52, 157, 255) ;
    
-  }
+}
 
-  #box1>img{
-      width: 100%;
-      
-      border-radius: 20px;
-  }
+h2 {
+    background-color: rgb(52, 157, 255);
+    color: white;
+    padding: 10px;
+   text-align: center;
 
 
- @media screen and (max-width:500px){
-  #booking-container{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-  }
- }
+}
 
- @media screen and (min-width:500px) and (max-width:900px){
-  #booking-container{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
- }
+form {
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin-left: 20px;
+    margin: auto;
+}
 
- ;
-  
+label {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding-left: 3%;
+}
+
+button[type="submit"] {
+    width:150px;
+    background-color: rgb(52, 157, 255);
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(52, 157, 255);
+}
+
+
    .Website {
     /* border: 2px solid red; */
      display: flex;
@@ -150,13 +128,14 @@
     }
 
     .tags{
-     
+      /* border: 2px solid darkblue; */
+      /* height: 40px; */
       width: 1000px;
       margin-top: 10px;
       margin-left: 300px;
      display: grid;
 
- 
+      /* background-image: linear-gradient(black,darkBlue); */
       position: fixed;
       top: 0;
      }
@@ -188,7 +167,10 @@
       .five{
         display: none;
       }
-
+/* 
+      .short1 .shortoneonetwo{
+        display: none;
+      } */
 
       .shortthreetwo{
         display: none;
@@ -241,7 +223,3 @@
       
       }
   }
-
-
- 
- 

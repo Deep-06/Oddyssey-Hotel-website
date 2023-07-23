@@ -29,7 +29,7 @@ AddPro.addEventListener("click", (e) => {
   buttonEl.addEventListener("click", (e) => {
     e.preventDefault();
     console.log("hi");
-    fetch(`https://mock-odyssey-api-server.onrender.com/products`, {
+    fetch(`https://mock-odyssey-api-serverrr.onrender.com/products`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -64,7 +64,7 @@ let tproducts = document.getElementById("total-products");
 
 getdata();
 async function getdata() {
-  let req = await fetch("https://mock-odyssey-api-server.onrender.com/products");
+  let req = await fetch("https://mock-odyssey-api-serverrr.onrender.com/products");
   let data = await req.json();
 
   display(data);
@@ -111,7 +111,7 @@ function display(data) {
 
         if (ind == i) {
           // let requiredd = e.target.element.id
-          fetch(`https://mock-odyssey-api-server.onrender.com/products/${ele.id}`, {
+          fetch(`https://mock-odyssey-api-serverrr.onrender.com/products/${ele.id}`, {
             method: "DELETE",
             headers: {
               'Content-type': 'application/json'
@@ -152,7 +152,7 @@ function display(data) {
         if (elem.id == idEl.value) {
           console.log('edit')
 
-          fetch(`https://mock-odyssey-api-server.onrender.com/products/${elem.id}`, {
+          fetch(`https://mock-odyssey-api-serverrr.onrender.com/products/${elem.id}`, {
             method: "PUT",
             headers: {
               'Content-type': 'application/json'
@@ -199,3 +199,7 @@ formel.addEventListener("submit", (e) => {
   });
   display(filtered);
 });
+
+
+
+// this.json

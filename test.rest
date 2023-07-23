@@ -1,1 +1,19 @@
-GET https://mock-odyssey-api-server.onrender.com/products
+GET https://mock-odyssey-api-serverrr.onrender.com/users
+
+###
+DELETE https://mock-odyssey-api-serverrr.onrender.com/users/FPRFfWs
+
+
+###
+POST https://mock-odyssey-api-serverrr.onrender.com/users
+Content-Type: application/json
+
+{
+    "Email": "qwe@q",
+    "FirstName": "deepak",
+    "FullName": "deepak underiya",
+    "Gender": "male",
+    "LastName": "underiya",
+    "Password": 123,
+    "id": "deepak+72e012ab24052"
+}
