@@ -1,0 +1,112 @@
+    /* Add animation to login and signup forms */
+#login, #signup {
+    opacity: 1;
+  
+    transition: opacity 10s ease, transform 10s ease;
+  }
+
+  
+  /* Add hover effect to social network icons */
+  .social-img img:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+  }
+  
+   /* testing */
+    #login-alert{
+        text-align: center;
+    }
+    #box {
+        display: grid;
+        grid-template-columns: 60% 40%;
+       
+    }
+    #logo img{
+        display: block;
+        width: 150px;
+        padding-bottom: 2%;
+       margin: auto;
+    }
+    #login{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+     
+        margin: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+       padding-top: 20px;
+       padding-bottom: 100px;
+      
+       
+    }
+    #social-head{
+        text-align:center;
+    }
+    .login-title {
+        text-align: center;
+      margin-top: 0%;
+    }
+    .social-img {
+        display: flex;
+        justify-content: center;         
+    }
+    .social-img img{
+        display: inline-block;
+        width: 50px;
+        padding: 2%;
+        border-radius: 100%;
+    }
+    #login-data{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    #login-data > input{
+      display: block;
+        margin: 1%;
+        padding: 2%;
+      width: 200px;
+        border-radius: 10px;
+    }
+
+    #login-data #login_btn{
+        width: 212px;
+        padding: 2%;
+        background: linear-gradient(120deg, rgb(58,174,162),aqua);
+    }
+
+    #signup{
+      
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 100px;
+        padding-bottom: 150px;
+        background: linear-gradient(120deg, rgb(58,174,162),aqua);
+        color: azure;
+        width: 1fr;
+        border-radius: 10px;
+      
+    }
+    #signup input,select{
+      
+        margin: 1%;
+        width: 1fr;
+        padding: 2%;
+        border-radius: 10px;
+      
+    }
+
+    @media screen and (max-width:480px) {
+        #box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        }
+    }
+

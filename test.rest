@@ -1,0 +1,1 @@
+GET https://mock-odyssey-api-server.onrender.com/products

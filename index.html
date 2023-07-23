@@ -24,6 +24,7 @@
     }
     .logo{
         grid-column: 0 / span 1;
+        background-color: #B5876D;
     }
     .logo img{
         display: flex;
@@ -164,6 +165,7 @@
         background-color: white;
         color: #B5876D;
         font-weight: bold;
+        margin-top: 200px;
     }
     .checkavailsec{
   text-align: center;
@@ -802,6 +804,13 @@
                 <div>Team</div>
                 <div>Contact</div>
                 <div>LogIn</div>
+                <div data-modal-target="modal-rooms"><a href="">Rooms</a></div>
+                <div data-modal-target="modal-activities">Activities</div>
+                <div><a href="">Location</a></div>
+                <div><a href="/HTML/Event.html">Event</a></div>
+                <div><a href="/HTML/team.html">Team</a></div>
+                <div><a href="/HTML/contact.html">Contact</a></div>
+                <div><a href="/HTML/login.html">LogIn</a></div>
                 </div>
                 <div class="rightbottomcontainmodal">
                     <div class="modal" id="modal-rooms">
@@ -829,6 +838,18 @@
                         <a href="">Room Grid</a>
                         <a href="">Room Details</a>
                         <a href="">Megamenu</a>
+                        <a href="/HTML/Event.html">Event</a>
+                        <a href="/index.html">Megamenu</a>
+                        <a href="/HTML/contact.html">Contact</a>
+                        <a href="/HTML/team.html">Team</a>
+                        <a href="/index.html">Megamenu</a>
+                      </div>
+                      <div class="activitydiv">
+                        <a href="">Room List</a>
+                        <a href="/index.html">Megamenu</a>
+                        <a href="">Room Grid</a>
+                        <a href="">Room Details</a>
+                        <a href="/index.html">Megamenu</a>
                       </div>
                     </div>
                 </div>
@@ -838,6 +859,8 @@
         </div>
     </div>
     <div class="welcomesec">
+
+    <div class="welcomesec" id="welcome">
         <h1 class="welcomemsg">WELCOME TO ODYSSEY</h1>
         <p>Welcome to Odyssey Hotel, where your journey to comfort and luxury begins. Experience a stay like no other as we take you on a memorable odyssey of relaxation and hospitality.</p>
         <button>EXPLORE</button>
@@ -1098,6 +1121,9 @@
     <div class="discountsec">
         <h1>GET <span>15% OFF</span> ON ANY OTHER EVENTS...</h1>
         <button>BOOK NOW</button>
+        <h1>GET 15% OFF ON ANY OTHER EVENTS...</h1>
+        <a href="#welcome">BOOK NOW</a>
+
     </div>
 
     <div class="pricingsec">
@@ -1136,6 +1162,40 @@
                     <p>Face Make</p>
                     <button>SIGN UP</button>
                  </div>
+        <div class="pricingsecbottom">
+         <div class="pricecard">
+            <h1>Silver Pack</h1>
+            <h3>$150 /per night</h3>
+            <p>Flight Ticket</p>
+            <p>Music Concert(30% Off)</p>
+            <p>Restaurant(Lunch)</p>
+            <p>Treatment</p>
+            <p>Face Make</p>
+            <a href="/HTML/login.html">SIGN UP</a>
+            
+         </div>
+         <div class="pricecard">
+            <h1>Gold Pack</h1>
+            <h3>$150 /per night</h3>
+            <p>Flight Ticket</p>
+            <p>Music Concert(30% Off)</p>
+            <p>Restaurant(Lunch)</p>
+            <p>Treatment</p>
+            <p>Face Make</p>
+            <a href="/HTML/login.html">SIGN UP</a>
+          
+         </div>
+         <div class="pricecard">
+            <h1>Diamond Pack</h1>
+            <h3>$190 /per night</h3>
+            <p>Flight Ticket</p>
+            <p>Music Concert(30% Off)</p>
+            <p>Restaurant(Lunch)</p>
+            <p>Treatment</p>
+            <p>Face Make</p>
+            <a href="/HTML/login.html">SIGN UP</a>
+         
+         </div>
         </div>
     </div>
 
@@ -1327,6 +1387,8 @@ modalTriggers.forEach(trigger => {
     const linkRect = trigger.getBoundingClientRect();
      targetModal.style.top = `${linkRect.bottom}px`;
      targetModal.style.left = `${linkRect.left}px`;
+    targetModal.style.top = `${linkRect.bottom}px`;
+    targetModal.style.left = `${linkRect.left}px`;
     targetModal.addEventListener('mouseleave', () => {
     const targetModalId = trigger.getAttribute('data-modal-target');
     const targetModal = document.getElementById(targetModalId);
@@ -1334,6 +1396,12 @@ modalTriggers.forEach(trigger => {
   });
 
   });
+
+//   trigger.addEventListener('mouseleave', () => {
+//     const targetModalId = trigger.getAttribute('data-modal-target');
+//     const targetModal = document.getElementById(targetModalId);
+//     targetModal.style.display = 'none';
+//   });
 });
 window.addEventListener('scroll', function() {
     var navbar = document.getElementById('sticky-navbar');
