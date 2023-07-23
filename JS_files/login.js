@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let alertElement=document.getElementById("login-alert")
 
-    let arr=JSON.parse(localStorage.getItem("signupData"))||[]
-
-
+    getdata("https://mock-odyssey-api-serverrr.onrender.com/users")
+    .then((arr) => {
+      
     if(arr.find(e=>e.email===email &&e.password===password)){
       console.log("signed in sucessfull")
       alertElement.innerText="signed in sucessfull"
@@ -38,7 +38,28 @@ document.addEventListener("DOMContentLoaded", function(){
       alertElement.innerText="wrong credentials"
     }
 
+    })
+    .catch((error) => {console.error("Error:", error.message);});
+
+   /*
+   
+  //local storage 
+
+    let arr=JSON.parse(localStorage.getItem("signupData"))||[]
   
+    if(arr.find(e=>e.email===email &&e.password===password)){
+      console.log("signed in sucessfull")
+      alertElement.innerText="signed in sucessfull"
+      Redirect()
+    }else if(email==`admin@admin.com`,password==`admin`){
+      console.log(email,password)
+      Redirect("admin")
+    }
+    else{
+      console.log("wrong credentials")
+      alertElement.innerText="wrong credentials"
+    }
+  */
 
     // Clear the login form fields after submission 
     document.getElementById("login_mail").value = "";
@@ -67,9 +88,11 @@ document.addEventListener("DOMContentLoaded", function(){
       gender: gender,
       email: email,
       password: password,
-      unique_id: `${firstname}+${Math.floor(Math.random()*1e+16).toString(16)}`
+      id: `${firstname}+${Math.floor(Math.random()*1e+16).toString(16)}`
     };
 
+
+ 
     let arr=JSON.parse(localStorage.getItem("signupData"))||[]
 
     
@@ -82,7 +105,7 @@ if (!duplicate && invalid_password && firstname !== "" && lastname !== "" && gen
   arr.push(signupData);
 
 // post user database to the server
-  postdata("https://mock-odyssey-api-server.onrender.com/products",signupData)
+  postdata("https://mock-odyssey-api-serverrr.onrender.com/users",signupData)
 
   alertElement.innerText = "Signed up successfully";
 } else if (!invalid_password) {
@@ -109,7 +132,7 @@ if (!duplicate && invalid_password && firstname !== "" && lastname !== "" && gen
   function Redirect(...user) {
       
     if(user=="admin"){
-    window.location.replace("./hotel.html")
+    window.location.replace("./admin.html")
     }else{
     window.location.replace("/index.html")
     }
@@ -131,20 +154,17 @@ if (!duplicate && invalid_password && firstname !== "" && lastname !== "" && gen
       }
      }
 
-     
-     async function getdata(url,user){
+
+     async function getdata(url){
       
       try{
-        let res=await fetch(url,{
-          method:"GET",
-        
-        })
+        let res=await fetch(url)
         let data=await res.json()
-        console.log(data)
-      let x=data.map((item)=>{return item.country})
-       return x.find((item)=>item==user)
+        console.log("hi",data)
+        return data
       }catch(err){
         console.log(err)
       }
+     
      }
 
