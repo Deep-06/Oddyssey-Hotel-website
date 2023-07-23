@@ -1,4 +1,7 @@
+import nav from "./Navbar.js";
 
+let navdiv=document.querySelector('nav')
+navdiv.innerHTML=nav
 let baseUrl = `https://hid-food-apii.onrender.com/product_data`;
 
 // ***************main container**********
