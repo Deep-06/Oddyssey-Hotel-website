@@ -200,6 +200,3 @@ formel.addEventListener("submit", (e) => {
   display(filtered);
 });
 
-
-
-// this.json
