@@ -429,25 +429,25 @@ background-color: white;
     margin-block-start: 0;
 }
 #roomcard1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://htmldemo.net/oestin/oestin/img/room/1.jpg');
+    background-image:url('https://htmldemo.net/oestin/oestin/img/room/1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #roomcard2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://htmldemo.net/oestin/oestin/img/room/2.jpg');
+    background-image:url('https://htmldemo.net/oestin/oestin/img/room/2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #roomcard3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://htmldemo.net/oestin/oestin/img/room/3.jpg');
+    background-image:url('https://htmldemo.net/oestin/oestin/img/room/3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #roomcard4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://htmldemo.net/oestin/oestin/img/room/4.jpg');
+    background-image:url('https://htmldemo.net/oestin/oestin/img/room/4.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -949,7 +949,7 @@ background-color: white;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -957,6 +957,7 @@ background-color: white;
     justify-content: space-between;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    color: #000000;
 }
 
 .blogcard:hover img, .blogcard:hover .blogtitle, .blogcard:hover .timei {
@@ -1002,14 +1003,7 @@ background-color: white;
 .likes div{
     display: flex;
 }
-#logobg{
-    height: 160px;
-    width: 20%;
-    background-color: #B5876D;
-    position: fixed;
-    bottom: 760px;
-    z-index: 1;
-}
+
 .roomcard {
     position: relative;
 }
@@ -1043,6 +1037,11 @@ button,svg,select{
 #explore{
     color: #B5876D;
     text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+#explore:hover{
+    background-color: #B5876D;
+    color: white;
 }
 .footercol img{
     cursor: pointer;
@@ -1079,12 +1078,188 @@ button,svg,select{
 .img-wrap:hover .overlay {
     opacity: 1;
 }
+#aboutsm svg{
+  background-color: #B5876D;
+  padding: 5px;
+  font-size: xx-large
+}
+#subscribebtn:hover{
+  background-color: white;
+  color: #000000;
+}
+.btns:hover{
+    background-color: white;
+     color: #000000;  
+}
+#signbtn{
+  background-color: #B5876D;
+  padding: 10px;
+  font-size: x-large;
+  color: white;
+}
+#signbtn:hover{
+    background-color: white;
+     color: #000000;  
+}
+
+
+@media screen and (min-width:600px) and (max-width: 1200px)  {
+    .righttopcontain{
+        display: none;
+    }
+    .logo img{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 30%;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    .welcomesec{
+        width: 50%;
+    }
+    .checkavailsec{
+        width: 50%;
+    }
+    .aboutussec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .roomscontainbottom{
+        width: 70%;
+    }
+    .servicecontain{
+        width: 80%;
+    }
+    .ratingsec{
+       display: none;
+    }
+    .gallarysec{
+        width: 80%;
+    }
+    .aboutussec,.discountsec,.pricingsec,.blogsec,.companiessec{
+        width: 80%;
+    }
+    .newslettersec,.newsletterbg{
+        width: 70%;
+    }
+    .footer{
+        width: 90%;
+    }
+    .welcomemsg{
+        font-size: 30px;
+    }
+    #welcmsg{
+        display: none;
+    }
+    .staffcard{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 600px)  {
+    .righttopcontain{
+        display: none;
+    }
+    .logo img{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 30%;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    .welcomesec{
+        width: 50%;
+    }
+    .checkavailsec{
+        width: 50%;
+    }
+    .aboutussec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .roomscontainbottom{
+        width: 70%;
+    }
+    .servicecontain{
+        width: 80%;
+    }
+    .ratingsec{
+       display: none;
+    }
+    .gallarysec{
+        width: 80%;
+    }
+    .aboutussec,.staffsec,.discountsec,.pricingsec,.blogsec,.companiessec{
+        width: 80%;
+    }
+    .newslettersec,.newsletterbg{
+        width: 70%;
+    }
+    .welcomemsg{
+        font-size: 30px;
+    }
+    #welcmsg{
+        display: none;
+    }
+    .righttopcontain{
+        display: none;
+    }
+    .logo img{
+       display: none;
+    }
+    .rightbottomcontain1{
+        display: none;
+    }
+    .servicecontainbottom{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #welcmsg{
+        display: none;
+    }
+    .slideshow-container{
+        display: none;
+    }
+    .aboutussec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .roomscontainbottom{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .staffcard{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogsecbottom{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pricingsecbottom{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .companiessec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .newslettersec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .footertop{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    
+}
 
 </style>
 <body>
     <div class="slideshow-container">
-
-
         <div class="mySlides fade">
           <img src="https://htmldemo.net/oestin/oestin/img/slider/2.jpg" style="width:100%" class="tinted">
         </div>
@@ -1097,7 +1272,6 @@ button,svg,select{
         
         </div>
         <div id="section">
-            <div id="logobg"></div>
             <div class="headercontain" id="sticky-navbar">
                 <div class="logo"><a href="/index.html"><img src="/logo1.jpeg"/></a></div>
                 <div class="rightcontain">
@@ -1162,14 +1336,12 @@ button,svg,select{
                         </div>
                         <div class="rightbottomcontain2">
                         </div>
-
-
                     </div>
                 </div>
             </div>
             <div class="welcomesec" id="welcome">
                 <h1 class="welcomemsg">WELCOME TO ODYSSEY</h1>
-                <p>Welcome to Odyssey Hotel, where your journey to comfort and luxury begins. Experience a stay like no other as we take you on a memorable odyssey of relaxation and hospitality.</p>
+                <p id="welcmsg">Welcome to Odyssey Hotel, where your journey to comfort and luxury begins. Experience a stay like no other as we take you on a memorable odyssey of relaxation and hospitality.</p>
                 <button><a href="#" id="explore">EXPLORE</a></button>
             </div>
             <div class="checkavailsec">
@@ -1193,7 +1365,7 @@ button,svg,select{
                     <option value="5">5</option>
                     <option value="6">6</option>
                   </select>
-                  <button>CHECK AVAILABILITY</button>
+                  <a href="#"></a><button id="availbtn">CHECK AVAILABILITY</button>
             </div>
             <div class="aboutussec">
                 <div class="aboutright">
@@ -1208,7 +1380,7 @@ button,svg,select{
                   </div>          
                 <div class="aboutleft">
                     <h1>ABOUT US</h1>
-                    <div>
+                    <div id="aboutuspara">
                     <p>Welcome to Odyssey Hotel, a haven of luxury and tranquility. Nestled amidst breathtaking landscapes, our hotel offers a captivating escape from the ordinary.
                         At Odyssey Hotel, we redefine hospitality with personalized service and attention to detail. Experience a seamless blend of modern comfort and timeless elegance during your stay with us.
                     </p>
@@ -1217,12 +1389,12 @@ button,svg,select{
                     </p>
                     <p>From exquisite dining to opulent rooms, let us curate moments that create cherished memories
                          for a lifetime. Welcome to the journey of a lifetime at Odyssey Hotel.</p>
-                     <div class="smlogoscontain">
-                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></p>
-                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></p>
-                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM164 356c-55.3 0-100-44.7-100-100s44.7-100 100-100c27 0 49.5 9.8 67 26.2l-27.1 26.1c-7.4-7.1-20.3-15.4-39.8-15.4-34.1 0-61.9 28.2-61.9 63.2 0 34.9 27.8 63.2 61.9 63.2 39.6 0 54.4-28.5 56.8-43.1H164v-34.4h94.4c1 5 1.6 10.1 1.6 16.6 0 57.1-38.3 97.6-96 97.6zm220-81.8h-29v29h-29.2v-29h-29V245h29v-29H355v29h29v29.2z"/></svg></p>
-                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg></p>
-                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></p> 
+                     <div class="smlogoscontain" id="aboutsm">
+                        <p><a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a></p>
+                        <p><a href="https://twitter.com/i/flow/login"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></p>
+                        <p><a href="https://plus.google.com/"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM164 356c-55.3 0-100-44.7-100-100s44.7-100 100-100c27 0 49.5 9.8 67 26.2l-27.1 26.1c-7.4-7.1-20.3-15.4-39.8-15.4-34.1 0-61.9 28.2-61.9 63.2 0 34.9 27.8 63.2 61.9 63.2 39.6 0 54.4-28.5 56.8-43.1H164v-34.4h94.4c1 5 1.6 10.1 1.6 16.6 0 57.1-38.3 97.6-96 97.6zm220-81.8h-29v29h-29.2v-29h-29V245h29v-29H355v29h29v29.2z"/></svg></a></p>
+                        <p><a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg></a></p>
+                        <p><a href="https://www.pinterest.com/pinterest/"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a></p>
                     </div>
                 </div>
                 </div>
@@ -1239,39 +1411,36 @@ button,svg,select{
                        <div class="roomcard-hover-content">
                         <h1>Royal Suit</h1>
                         <p>Experience sophistication and elegance in our Deluxe Suite at Odyssey Hotel.</p>
-                        <button>Details</button>
+                        <button class="btns">Details</button>
+                        <div class="roomprice">
+                        <p class="rate">$120</p>
+                       <p class="pernight">Per Night</p>
+                   </div>
+                </div>
+                    </div>
+                    <div class="roomcard" id="roomcard1">
+                        <h1 class="roomtitle">Royal Suit</h1>
+                       <div class="roomcard-hover-content">
+                        <h1>Deluxe Suit</h1>
+                        <p>Enjoy a cozy and comfortable stay in our Single Room at Odyssey Hotel. Perfect for solo travelers.</p>
+                        <button class="btns">Details</button>
                         <div class="roomprice">
                         <p class="rate">$150</p>
                        <p class="pernight">Per Night</p>
                    </div>
                 </div>
                     </div>
-                    <div class="roomcard" id="roomcard2">
+                    <div class="roomcard" id="roomcard1">
+                        <h1 class="roomtitle">Royal Suit</h1>
+                       <div class="roomcard-hover-content">
                         <h1>Deluxe Suit</h1>
-                        <p>Experience sophistication and elegance in our Deluxe Suite at Odyssey Hotel.</p>
-                        <button>Details</button>
-                        <div class="roomprice">
-                            <p class="rate">$150</p>
-                            <p class="pernight">Per Night</p>
-                        </div>
-                    </div>
-                    <div class="roomcard" id="roomcard3">
-                        <h1>Single Room</h1>
-                        <p>Enjoy a cozy and comfortable stay in our Single Room at Odyssey Hotel. Perfect for solo travelers.</p>
-                        <button>Details</button>
-                        <div class="roomprice">
-                            <p class="rate">$120</p>
-                            <p class="pernight">Per Night</p>
-                        </div>
-                    </div>
-                    <div class="roomcard" id="roomcard4">
-                        <h1>Double Room</h1>
                         <p>Relax and unwind in our inviting Double Room at Odyssey Hotel. Ideal for couples or friends.</p>
-                        <button>Details</button>
+                        <button class="btns">Details</button>
                         <div class="roomprice">
-                            <p class="rate">$100</p>
-                            <p class="pernight">Per Night</p>
-                        </div>
+                        <p class="rate">$190</p>
+                       <p class="pernight">Per Night</p>
+                   </div>
+                </div>
                     </div>
                 </div>
             </div>
@@ -1428,10 +1597,10 @@ button,svg,select{
             <div class="discountsec">
         
                 <h1>GET 15% OFF ON ANY OTHER EVENTS...</h1>
-                <a href="#welcome"><button>Book Now</button></a>
+                <a href="#welcome"><button class="btns">Book Now</button></a>
             </div>
         
-            <div class="pricingsec">
+            <div class="pricingsec" id="pricingsec">
                 <div class="pricingsectop">
                     <h1>OUR PRICING</h1>
                     <p>Discover your ideal retreat with our thoughtfully crafted pricing packages. Unwind and indulge in the ultimate luxury experience.</p>
@@ -1445,8 +1614,7 @@ button,svg,select{
                     <p>Restaurant(Lunch)</p>
                     <p>Treatment</p>
                     <p>Face Make</p>
-                    <a href="/HTML/login.html"><button>SIGN UP</button></a>
-                    
+                    <a href="/HTML/login.html"><button id="signbtn">SIGN UP</button></a>                    
                  </div>
                  <div class="pricecard">
                     <h1>Gold Pack</h1>
@@ -1456,8 +1624,7 @@ button,svg,select{
                     <p>Restaurant(Lunch)</p>
                     <p>Treatment</p>
                     <p>Face Make</p>
-                    <a href="/HTML/login.html"><button>SIGN UP</button></a>
-                  
+                    <a href="/HTML/login.html"><button id="signbtn">SIGN UP</button></a>                  
                  </div>
                  <div class="pricecard">
                     <h1>Diamond Pack</h1>
@@ -1467,8 +1634,7 @@ button,svg,select{
                     <p>Restaurant(Lunch)</p>
                     <p>Treatment</p>
                     <p>Face Make</p>
-                    <a href="/HTML/login.html"><button>SIGN UP</button></a>
-                 
+                    <a href="/HTML/login.html"><button id="signbtn">SIGN UP</button></a>                 
                  </div>
                 </div>
             </div>
@@ -1495,50 +1661,64 @@ button,svg,select{
                                 <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg> By A. Malik</div>
                                 <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>40 Likes</div>
                                 <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"/></svg>10 comments</div>
-                                <button>Read More</button>
+                                <a href="#"><button>Read More</button></a>
                             </div>
                         </div>
                     </div>
+                    <div class="blogcard">
+                        <img src="https://htmldemo.net/oestin/oestin/img/blog/1.jpg">
+                        <p class="timei"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                        Jun 25,2019</p>
+                        <p class="blogtitle">A Culinary Journey</p>
                     
-                        <div class="blogcard">
-                            <img src="https://htmldemo.net/oestin/oestin/img/blog/2.jpg">
-                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
-                            Mar 03,2019</p>
-                            <p class="blogtitle">A Culinary Journey</p>
-                        </div>
-                        <div class="blogcard">
-                            <img src="https://htmldemo.net/oestin/oestin/img/blog/3.jpg">
-                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
-                            Dec 17,2019</p>
-                            <p class="blogtitle">Adventure Awaits</p>
-                        </div>
-                        <!-- <div>
-                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
-                                Jun 25,2019</p>
-                            <p class="blogtitle">Exploring hidden gems</p>
-                            <p class="snippet">"Join us as we delve deep into the heart of unexplored territories in our latest blog post, "Exploring Hidden Gems".</p>
+                        <div class="hover-content">
+                            <p class="hoverp"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                            Jun 25,2019</p>
+                            <p class="hovertitle">A Culinary Journey</p>
+                            <p class="snippet">Whet your appetite with our exploration of global culinary delights. Uncover mouthwatering recipes and gastronomic adventures in our 'Culinary Chronicles' blog</p>
                             <div class="likes">
-                            <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg> By A. Malik</div>
-                            <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>40 Likes</div>
-                            <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"/></svg>10 comments</div>
-                            <button>Read More</button>
+                                <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg> By George</div>
+                                <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>50 Likes</div>
+                                <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"/></svg>5 comments</div>
+                                <a href="#"><button>Read More</button></a>
                             </div>
-                        </div> -->
+                        </div>
+                    </div>
+
+                    <div class="blogcard">
+                        <img src="https://htmldemo.net/oestin/oestin/img/blog/1.jpg">
+                        <p class="timei"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                        Jun 25,2019</p>
+                        <p class="blogtitle">Adventure Awaits</p>
+                    
+                        <div class="hover-content">
+                            <p class="hoverp"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                            Jun 25,2019</p>
+                            <p class="hovertitle">Adventure Awaits</p>
+                            <p class="snippet">Join us as we embark on adrenaline-pumping journeys in uncharted territories. Get ready to explore thrilling adventures and spectacular landscapes in our 'Adventure Unleashed' blog</p>
+                            <div class="likes">
+                                <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg> By George</div>
+                                <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>50 Likes</div>
+                                <div><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"/></svg>5 comments</div>
+                                <a href="#"><button>Read More</button></a>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         
             <div class="companiessec">
-                <img src="https://htmldemo.net/oestin/oestin/img/client/1.png" alt="">
-                <img src="https://htmldemo.net/oestin/oestin/img/client/2.png" alt="">
-                <img src="https://htmldemo.net/oestin/oestin/img/client/3.png" alt="">
-                <img src="https://htmldemo.net/oestin/oestin/img/client/4.png" alt="">
-                <img src="https://htmldemo.net/oestin/oestin/img/client/5.png" alt="">
+                <a href=""><img src="https://htmldemo.net/oestin/oestin/img/client/1.png" alt=""></a>
+                <a href=""><img src="https://htmldemo.net/oestin/oestin/img/client/2.png" alt=""></a>
+                <a href=""><img src="https://htmldemo.net/oestin/oestin/img/client/3.png" alt=""></a>
+                <a href=""><img src="https://htmldemo.net/oestin/oestin/img/client/4.png" alt=""></a>
+                <a href=""><img src="https://htmldemo.net/oestin/oestin/img/client/5.png" alt=""></a>
                </div>
          <div class="newsletterbg">
             <div class="newslettersec">
                 <div>NEWSLETTER SIGN-UP</div>
                 <input type="email" placeholder="Enter your E-mail"/>
-                <button>Subscribe</button>
+                <button id="subscribebtn">Subscribe</button>
              </div>
          </div>
            <div class="footer">

@@ -423,25 +423,25 @@ font-size: large;
 margin-block-start: 0;
 }
 #roomcard1{
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://htmldemo.net/oestin/oestin/img/room/1.jpg');
+background-image:url('https://htmldemo.net/oestin/oestin/img/room/1.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
 #roomcard2{
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://htmldemo.net/oestin/oestin/img/room/2.jpg');
+background-image:url('https://htmldemo.net/oestin/oestin/img/room/2.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
 #roomcard3{
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://htmldemo.net/oestin/oestin/img/room/3.jpg');
+background-image:url('https://htmldemo.net/oestin/oestin/img/room/3.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
 #roomcard4{
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://htmldemo.net/oestin/oestin/img/room/4.jpg');
+background-image:url('https://htmldemo.net/oestin/oestin/img/room/4.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -943,7 +943,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: white;
+background-color: rgb(255, 255, 255);
 padding: 20px;
 box-sizing: border-box;
 display: flex;
@@ -951,6 +951,7 @@ flex-direction: column;
 justify-content: space-between;
 opacity: 0;
 transition: opacity 0.3s ease-in-out;
+color: #000000;
 }
 
 .blogcard:hover img, .blogcard:hover .blogtitle, .blogcard:hover .timei {
@@ -996,14 +997,7 @@ cursor: pointer;
 .likes div{
 display: flex;
 }
-#logobg{
-height: 160px;
-width: 20%;
-background-color: #B5876D;
-position: fixed;
-bottom: 760px;
-z-index: 1;
-}
+
 .roomcard {
 position: relative;
 }
@@ -1037,6 +1031,11 @@ cursor: pointer;
 #explore{
 color: #B5876D;
 text-decoration: none;
+transition: background-color 0.5s ease;
+}
+#explore:hover{
+background-color: #B5876D;
+color: white;
 }
 .footercol img{
 cursor: pointer;
@@ -1072,4 +1071,182 @@ fill: #fff;
 
 .img-wrap:hover .overlay {
 opacity: 1;
+}
+#aboutsm svg{
+background-color: #B5876D;
+padding: 5px;
+font-size: xx-large
+}
+#subscribebtn:hover{
+background-color: white;
+color: #000000;
+}
+.btns:hover{
+background-color: white;
+ color: #000000;  
+}
+#signbtn{
+background-color: #B5876D;
+padding: 10px;
+font-size: x-large;
+color: white;
+}
+#signbtn:hover{
+background-color: white;
+ color: #000000;  
+}
+
+
+@media screen and (min-width:600px) and (max-width: 1200px)  {
+.righttopcontain{
+    display: none;
+}
+.logo img{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 30%;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.welcomesec{
+    width: 50%;
+}
+.checkavailsec{
+    width: 50%;
+}
+.aboutussec{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.roomscontainbottom{
+    width: 70%;
+}
+.servicecontain{
+    width: 80%;
+}
+.ratingsec{
+   display: none;
+}
+.gallarysec{
+    width: 80%;
+}
+.aboutussec,.discountsec,.pricingsec,.blogsec,.companiessec{
+    width: 80%;
+}
+.newslettersec,.newsletterbg{
+    width: 70%;
+}
+.footer{
+    width: 90%;
+}
+.welcomemsg{
+    font-size: 30px;
+}
+#welcmsg{
+    display: none;
+}
+.staffcard{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+@media screen and (max-width: 600px)  {
+.righttopcontain{
+    display: none;
+}
+.logo img{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 30%;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.welcomesec{
+    width: 50%;
+}
+.checkavailsec{
+    width: 50%;
+}
+.aboutussec{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.roomscontainbottom{
+    width: 70%;
+}
+.servicecontain{
+    width: 80%;
+}
+.ratingsec{
+   display: none;
+}
+.gallarysec{
+    width: 80%;
+}
+.aboutussec,.staffsec,.discountsec,.pricingsec,.blogsec,.companiessec{
+    width: 80%;
+}
+.newslettersec,.newsletterbg{
+    width: 70%;
+}
+.welcomemsg{
+    font-size: 30px;
+}
+#welcmsg{
+    display: none;
+}
+.righttopcontain{
+    display: none;
+}
+.logo img{
+   display: none;
+}
+.rightbottomcontain1{
+    display: none;
+}
+.servicecontainbottom{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+#welcmsg{
+    display: none;
+}
+.slideshow-container{
+    display: none;
+}
+.aboutussec{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.roomscontainbottom{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.staffcard{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.blogsecbottom{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.pricingsecbottom{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.companiessec{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
+.newslettersec{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
+.footertop{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
+
 }
