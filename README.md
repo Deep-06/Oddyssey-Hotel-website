@@ -1,16 +1,6 @@
 # gaping-spring-1880
 Odyssey is a Hotel booking web application. User-friendly and feature-rich web application designed to assist tourists in finding and booking accommodations for their travel destinations. The application provides an easy-to-use interface to search for hotels, view their details, and make reservations, making it convenient for travelers to plan their trips effectively.
 
-# Login and Signup Page
-This project contains a simple login and signup page implemented in HTML, CSS, and JavaScript. The page allows users to log in using their credentials or sign up for a new account.
-<img src="/images/login.PNG">
-<img src="/images/signup.PNG">
-Features:
-    1.Login: Users can enter their email and password to log in to their existing accounts.
-    2.Signup: New users can create an account by providing their first name, last name, gender, email, and password.
-    3.Validation: The signup form performs basic validation to ensure all required fields are filled, and the password is re-entered correctly.
-    4.Server Integration: The login form checks against a mock server to verify user credentials.
-    5.Redirects: Users are redirected to different pages based on their roles (e.g., user or admin) after successful login.
 
 
 Pages -
@@ -24,6 +14,23 @@ Admin Dashboard |
 Event Page |
 Team Page |
 Contact Us |
+
+
+# Login and Signup Page
+This project contains a simple login and signup page implemented in HTML, CSS, and JavaScript. The page allows users to log in using their credentials or sign up for a new account.
+<img width="710" alt="image" src="/images/login.PNG"/>
+<img width="710" alt="image" src="/images/signup.PNG"/>
+Features:
+
+1.Login: Users can enter their email and password to log in to their existing accounts.
+
+2.Signup: New users can create an account by providing their first name, last name, gender, email, and password.
+
+3.Validation: The signup form performs basic validation to ensure all required fields are filled, and the password is re-entered correctly.
+    
+4.Server Integration: The login form checks against a mock server to verify user credentials.
+    
+5.Redirects: Users are redirected to different pages based on their roles (e.g., user or admin) after successful login.
 
 # logo
 The logo for the hotel website is designed to convey the essence of hospitality, comfort, and elegance. It aims to attract potential guests while reflecting the unique identity of the hotel.
