@@ -1,5 +1,5 @@
 # gaping-spring-1880
-Odyssey is a Hotel booking web application
+Odyssey is a Hotel booking web application. User-friendly and feature-rich web application designed to assist tourists in finding and booking accommodations for their travel destinations. The application provides an easy-to-use interface to search for hotels, view their details, and make reservations, making it convenient for travelers to plan their trips effectively.
 
 Pages -
 Index Page | 
@@ -12,6 +12,9 @@ Admin Dashboard
 
 # logo
 
+# Admin Page
+
+<img width="710" alt="image" src="https://i.postimg.cc/FznddnRz/Screenshot-1246.png" />
 
 # Sign Up Page
 
@@ -65,7 +68,7 @@ Users will be required to enter their billing details, including name, address, 
 
 # Group Project 
 **Members**     **Student code**
-
+Sankar Mutyala  - fw26_251 |
 Anusha          - fw25_218 |
 
 
@@ -73,3 +76,8 @@ Anusha          - fw25_218 |
 ###
 netlify link
 https://moonlit-unicorn-475c35.netlify.app/
+
+
+###
+Github Link
+https://github.com/Sankar-Mutyala/gaping-spring-1880
