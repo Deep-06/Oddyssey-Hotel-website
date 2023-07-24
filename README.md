@@ -15,6 +15,8 @@ Team Page |
 Contact Us |
 
 # logo
+The logo for the hotel website is designed to convey the essence of hospitality, comfort, and elegance. It aims to attract potential guests while reflecting the unique identity of the hotel.
+
 
 # Admin Page
 
@@ -51,8 +53,6 @@ The Logout button allows administrators to log out from the admin section.
 # Sign Up Page
 
 # Login Page
-
-# Landing Page
 
 # Home Page
 
