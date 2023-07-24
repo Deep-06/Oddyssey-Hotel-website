@@ -1,6 +1,5 @@
 # gaping-spring-1880
 Odyssey is a Hotel booking web application
-# shocking-grade-9442
 
 Pages -
 Index Page | 
@@ -14,17 +13,13 @@ Admin Dashboard
 # logo
 
 
-
 # Sign Up Page
 
 # Login Page
 
-
 # Landing Page
 
 # Home Page
-
-
 
 # Hotel Page
 
@@ -72,9 +67,6 @@ Users will be required to enter their billing details, including name, address, 
 **Members**     **Student code**
 
 Anusha          - fw25_218 |
-
-
-
 
 
 
