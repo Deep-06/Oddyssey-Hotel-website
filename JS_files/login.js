@@ -178,10 +178,10 @@ if (!duplicate && invalid_password && firstname !== "" && lastname !== "" && gen
     //  localStorage.setItem("admin-response",false)    
 
 //for payment page
-     if(user_res==true){
-      window.location.href="/HTML/payment.html"
-     }
-     
+    //  if(user_res==true){
+    //   window.location.href="/HTML/payment.html"
+    //  }
+
 //for admin page
     // if(admin_res==true){
     //   window.location.href="/HTML/admin.html"

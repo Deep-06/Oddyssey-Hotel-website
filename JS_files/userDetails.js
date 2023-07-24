@@ -15,14 +15,14 @@ form.addEventListener('submit', function(event) {
   
   
   console.log(fullname, address, city, state, pincode,mobilenumber,checkin,checkout);
-  // window.location.href="payment.html"
-  let user_res = JSON.parse(localStorage.getItem("user-response"));
+  window.location.href="payment.html"
+  // let user_res = JSON.parse(localStorage.getItem("user-response"));
 
-  if(user_res==true){
-    window.location.href="/HTML/payment.html"
-   }else{
-    window.location.href="/HTML/login.html"
-   }
+  // if(user_res==true){
+  //   window.location.href="/HTML/payment.html"
+  //  }else{
+  //   window.location.href="/HTML/login.html"
+  //  }
 
 });
 
