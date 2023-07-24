@@ -1101,6 +1101,22 @@ button,svg,select{
     background-color: white;
      color: #000000;  
 }
+.gallaryimages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallaryimages div {
+    flex: 1 0 calc(33.33% - 20px); 
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.gallaryimages img {
+    width: 200%;
+    height: auto;
+}
 
 
 @media screen and (min-width:600px) and (max-width: 1200px)  {
@@ -1343,7 +1359,7 @@ button,svg,select{
             <div class="welcomesec" id="welcome">
                 <h1 class="welcomemsg">WELCOME TO ODYSSEY</h1>
                 <p id="welcmsg">Welcome to Odyssey Hotel, where your journey to comfort and luxury begins. Experience a stay like no other as we take you on a memorable odyssey of relaxation and hospitality.</p>
-                <button><a href="#" id="explore">EXPLORE</a></button>
+                <button><a href="./HTML/hotel.html" id="explore">EXPLORE</a></button>
             </div>
             <div class="checkavailsec">
                 <input type="date"/>
@@ -1366,7 +1382,7 @@ button,svg,select{
                     <option value="5">5</option>
                     <option value="6">6</option>
                   </select>
-                  <a href="#"></a><button id="availbtn">CHECK AVAILABILITY</button>
+                  <a href="./HTML/hotel.html"></a><button id="availbtn">CHECK AVAILABILITY</button>
             </div>
             <div class="aboutussec">
                 <div class="aboutright">
@@ -1412,7 +1428,7 @@ button,svg,select{
                        <div class="roomcard-hover-content">
                         <h1>Royal Suit</h1>
                         <p>Experience sophistication and elegance in our Deluxe Suite at Odyssey Hotel.</p>
-                        <button class="btns">Details</button>
+                        <a href="./HTML/hotel.html"><button class="btns">Details</button></a>
                         <div class="roomprice">
                         <p class="rate">$120</p>
                        <p class="pernight">Per Night</p>
@@ -1424,7 +1440,7 @@ button,svg,select{
                        <div class="roomcard-hover-content">
                         <h1>Deluxe Suit</h1>
                         <p>Enjoy a cozy and comfortable stay in our Single Room at Odyssey Hotel. Perfect for solo travelers.</p>
-                        <button class="btns">Details</button>
+                        <a href="./HTML/hotel.html"><button class="btns">Details</button></a>
                         <div class="roomprice">
                         <p class="rate">$150</p>
                        <p class="pernight">Per Night</p>
@@ -1436,7 +1452,7 @@ button,svg,select{
                        <div class="roomcard-hover-content">
                         <h1>Deluxe Suit</h1>
                         <p>Relax and unwind in our inviting Double Room at Odyssey Hotel. Ideal for couples or friends.</p>
-                        <button class="btns">Details</button>
+                        <a href="./HTML/hotel.html"><button class="btns">Details</button></a>
                         <div class="roomprice">
                         <p class="rate">$190</p>
                        <p class="pernight">Per Night</p>
@@ -1598,7 +1614,7 @@ button,svg,select{
             <div class="discountsec">
         
                 <h1>GET 15% OFF ON ANY OTHER EVENTS...</h1>
-                <a href="#welcome"><button class="btns">Book Now</button></a>
+                <a href="./HTML/hotel.html"><button class="btns">Book Now</button></a>
             </div>
         
             <div class="pricingsec" id="pricingsec">
@@ -1719,7 +1735,7 @@ button,svg,select{
             <div class="newslettersec">
                 <div>NEWSLETTER SIGN-UP</div>
                 <input type="email" placeholder="Enter your E-mail"/>
-                <button id="subscribebtn">Subscribe</button>
+                <button id="subscribebtn" onclick="()=>{alert('subscribed successfully')}">Subscribe</button>
              </div>
          </div>
            <div class="footer">
@@ -1997,7 +2013,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-
+let sub=document.querySelector('#subscribebtn')
+console.log(sub)
+sub.addEventListener('click',()=>{
+    alert("You have successfully subscribed to our newslater")
+    console.log("hii")
+})
 
 </script>
 </html>
