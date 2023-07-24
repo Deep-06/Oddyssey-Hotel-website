@@ -17,12 +17,9 @@ Admin Dashboard
 
 # Login Page
 
-
 # Landing Page
 
 # Home Page
-
-
 
 # Hotel Page
 
