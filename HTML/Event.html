@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
+    <link rel="stylesheet" href="/CSS/index.css">
     <link rel="stylesheet" href="/CSS/event.css">
+    <link rel="icon" href="/logo1.jpeg">
     <style></style>
 </head>
 <body>
    <!-- header part -->
-    <div id="head">
-      <div class="text">
+   <nav> </nav>
+    <div id="eventhead">
+      <div class="eventtext">
         <h2>EVENTS</h2>
         <p>A quality room of Oestin with sea or mountain view</p>
-        <div class="bar"> 
+        <div class="eventbar"> 
            <div><a href="/index.html">Home</a></div>        
             <div><h4>// Events</h4> </div>                                               
         </div>
@@ -24,7 +27,7 @@
     <!-- events section started -->
     <section id="event">   
       <!-- container contains the text -->
-       <div class="container">
+       <div class="eventcontainer">
           <div class="row">
             <div class="sec-text">
                <h3>UPCOMING EVENTS</h3>
@@ -34,7 +37,7 @@
        </div>
        <!-- container contains the event button -->
        <div class="container">
-         <div class="row">
+         <div class="eventrow">
             <div class="event-menu">
                 <button data-filter="*" class="active">All</button>
                 <button data-filter=".music">Music Party</button>
@@ -103,50 +106,12 @@
          </div>
        </div>
     </section>
-    <!-- events section ends -->
+     <!-- events section ends -->
+    <footer></footer>
+   
 </body>
-<script>
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get all buttons with data-filter attribute
-    const filterButtons = document.querySelectorAll(".event-menu button");
-
-    // Get all event cards
-    const eventCards = document.querySelectorAll(".single-event");
-
-    // Add a click event listener to each button
-    filterButtons.forEach(function (button) {
-      button.addEventListener("click", function () {
-        // Remove the 'active' class from all buttons
-        filterButtons.forEach(function (btn) {
-          btn.classList.remove("active");
-        });
-
-        // Add the 'active' class to the clicked button
-        button.classList.add("active");
-
-        // Get the data-filter value of the clicked button
-        const filterValue = button.getAttribute("data-filter");
-
-        // Show or hide event cards based on the data-filter value
-        if (filterValue === "*") {
-          eventCards.forEach(function (card) {
-            card.style.display = "block"; // Show all event cards
-          });
-        } else {
-          eventCards.forEach(function (card) {
-            card.style.display = "none"; // Hide all event cards
-          });
-
-          // Show event cards with the corresponding filter class
-          const filteredCards = document.querySelectorAll(filterValue);
-          filteredCards.forEach(function (card) {
-            card.style.display = "block";
-          });
-        }
-      });
-    });
-  });
+<script src="/JS_files/navjs.js"></script>
+<script type="module" src="/JS_files/event.js">
 
 
 </script>

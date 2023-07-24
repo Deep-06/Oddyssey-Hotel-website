@@ -7,13 +7,13 @@ body{
 
 /* header */
 
-#head{
+#teamhead{
     background-image: url(https://htmldemo.net/oestin/oestin/img/bg/3.jpg);
     background-size: cover;
     background-position: center top;
     opacity: 0.9;
 }
-.text{
+.teamtext{
    padding: 20px;
    padding-top: 220px;
    text-align: center;
@@ -24,13 +24,13 @@ body{
    padding-bottom: 10px;
    
 }
-.text h2{
+.teamtext h2{
     font-size: 36px;
     line-height: 26px;
     margin-bottom: 20px;  
     font-weight: 700;  
 }
-.bar{
+.teambar{
     display: flex;
     align-items: center;
     margin-left: 12%;
@@ -39,12 +39,12 @@ body{
     margin-top: 80px; 
     text-align: left;
 }
-.bar a{
+.teambar a{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration-line: none;
 }
-.bar h4{
+.teambar h4{
     color: #b5876d;
     color: rgb(150,73,26);
 }
@@ -60,13 +60,25 @@ padding-bottom: 4%;
 .single-team img{
     width: 100%;
 }
+/* .single-team{
+    width: 90%;
+    height: 500px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, .3) 50%, rgba(0, 0, 0, .3) 100%), url('https://htmldemo.net/oestin/oestin/img/team/1.jpg');
+     background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large; 
+} */
 .container{
     padding-right: 8%;
     padding-left: 8%;
     margin-right: auto;
     margin-left: auto;
 }
-.row{
+.teamrow{
     line-height: 17px;
     margin-bottom: 23px;   
     width: 80%; 
@@ -140,6 +152,7 @@ margin: auto;
 .single-team:hover .hidden{
     display: block;
     margin-top: -260px;
+    background-color: rgb(127,127,127);
     opacity: .9;
 }
 
@@ -170,13 +183,13 @@ margin: auto;
 /* media query/responsiveness */
 
 @media all and (max-width:767px){
-    .text h2{
+    .teamtext h2{
         font-size: 26px;     
     } 
-    .text p{
+    .teamtext p{
         display: none;
     } 
-    .bar{
+    .teambar{
         display: flex;
         justify-content: center;
         margin-top: 0px; 
