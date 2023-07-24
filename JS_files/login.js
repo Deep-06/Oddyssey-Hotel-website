@@ -27,10 +27,12 @@ document.addEventListener("DOMContentLoaded", function(){
       
     if(arr.find(e=>e.email===email &&e.password===password)){
       console.log("signed in sucessfull")
+      localStorage.setItem("user-response",true)
       alertElement.innerText="signed in sucessfull"
       Redirect()
-    }else if(email==`admin@admin.com`,password==`admin`){
+    }else if(email==`admin@admin.com`&& password==`admin`){
       console.log(email,password)
+      localStorage.setItem("admin-response",true)  
       Redirect("admin")
     }
     else{
@@ -42,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){
     .catch((error) => {console.error("Error:", error.message);});
 
    /*
-   
+
   //local storage 
 
     let arr=JSON.parse(localStorage.getItem("signupData"))||[]
@@ -133,6 +135,7 @@ if (!duplicate && invalid_password && firstname !== "" && lastname !== "" && gen
       
     if(user=="admin"){
     window.location.replace("./admin.html")
+    
     }else{
     window.location.replace("/index.html")
     }
@@ -168,3 +171,33 @@ if (!duplicate && invalid_password && firstname !== "" && lastname !== "" && gen
      
      }
 
+     let user_res = JSON.parse(localStorage.getItem("user-response"));
+
+//for logout page
+    //  localStorage.setItem("user-response",false)    
+    //  localStorage.setItem("admin-response",false)    
+
+//for payment page
+     if(user_res==true){
+      window.location.href="/HTML/payment.html"
+     }
+     
+//for admin page
+    // if(admin_res==true){
+    //   window.location.href="/HTML/admin.html"
+    // }
+       
+
+
+
+
+    // for userDetaild.js
+    
+  // let user_res = JSON.parse(localStorage.getItem("user-response"));
+
+  // if(user_res==true){
+  //   window.location.href="/HTML/payment.html"
+  //  }else{
+  //   window.location.href="/HTML/login.html"
+  //  }
+ 
