@@ -9,7 +9,10 @@ Login Page |
 Sign Up Page |
 Hotel Page |
 Payment |
-Admin Dashboard
+Admin Dashboard |
+Event Page |
+Team Page |
+Contact Us |
 
 # logo
 
