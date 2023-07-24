@@ -14,6 +14,34 @@ Admin Dashboard
 
 # Admin Page
 
+Features
+The admin section of the web application offers the following features:
+
+Dashboard: Provides an overview of important statistics related to the hotel, such as out-of-stock rooms, total bookings, total rooms available, and more.
+
+Users: Allows administrators to view and manage user accounts and details.
+
+Payments: Provides information and options for handling payments and transactions.
+
+Analytics: Presents analytical data and charts to help administrators understand trends and make informed decisions.
+
+Support: Allows administrators to handle user support and inquiries.
+
+Logout: Logs out the admin from the platform.
+
+Dashboard
+The dashboard displays key statistics, including out-of-stock rooms, total bookings, total rooms available, and available rooms count.
+Users
+The Users section allows administrators to view a list of registered users and manage their accounts, details, and permissions.
+Payments
+The Payments section provides options for managing and handling transactions, payment gateways, and related financial tasks.
+Analytics
+The Analytics section presents various charts and graphs to help administrators analyze booking trends, revenue, and other important data.
+Support
+The Support section is designed to handle user inquiries, complaints, and support requests.
+Logout
+The Logout button allows administrators to log out from the admin section.
+
 <img width="710" alt="image" src="https://i.postimg.cc/FznddnRz/Screenshot-1246.png" />
 
 # Sign Up Page
