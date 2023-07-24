@@ -1125,9 +1125,59 @@ button,svg,select{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
-    .person-container1,.person-container2,.person-container3{
-        width: 100%;
+    .roomscontainbottom{
+        width: 70%;
+    }
+    .servicecontain{
+        width: 80%;
+    }
+    .ratingsec{
+       display: none;
+    }
+    .gallarysec{
+        width: 80%;
+    }
+    .aboutussec,.discountsec,.pricingsec,.blogsec,.companiessec{
+        width: 80%;
+    }
+    .newslettersec,.newsletterbg{
+        width: 70%;
+    }
+    .footer{
+        width: 90%;
+    }
+    .welcomemsg{
+        font-size: 30px;
+    }
+    #welcmsg{
+        display: none;
+    }
+    .staffcard{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 600px)  {
+    .righttopcontain{
+        display: none;
+    }
+    .logo img{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 30%;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    .welcomesec{
+        width: 50%;
+    }
+    .checkavailsec{
+        width: 50%;
+    }
+    .aboutussec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     .roomscontainbottom{
         width: 70%;
@@ -1135,9 +1185,24 @@ button,svg,select{
     .servicecontain{
         width: 80%;
     }
-
-}
-@media screen and (max-width: 600px)  {
+    .ratingsec{
+       display: none;
+    }
+    .gallarysec{
+        width: 80%;
+    }
+    .aboutussec,.staffsec,.discountsec,.pricingsec,.blogsec,.companiessec{
+        width: 80%;
+    }
+    .newslettersec,.newsletterbg{
+        width: 70%;
+    }
+    .welcomemsg{
+        font-size: 30px;
+    }
+    #welcmsg{
+        display: none;
+    }
     .righttopcontain{
         display: none;
     }
@@ -1145,12 +1210,51 @@ button,svg,select{
        display: none;
     }
     .rightbottomcontain1{
-        flex-direction: column;
+        display: none;
     }
     .servicecontainbottom{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    #welcmsg{
+        display: none;
+    }
+    .slideshow-container{
+        display: none;
+    }
+    .aboutussec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .roomscontainbottom{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .staffcard{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogsecbottom{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pricingsecbottom{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .companiessec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .newslettersec{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .footertop{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    
 }
 
 </style>
@@ -1237,7 +1341,7 @@ button,svg,select{
             </div>
             <div class="welcomesec" id="welcome">
                 <h1 class="welcomemsg">WELCOME TO ODYSSEY</h1>
-                <p>Welcome to Odyssey Hotel, where your journey to comfort and luxury begins. Experience a stay like no other as we take you on a memorable odyssey of relaxation and hospitality.</p>
+                <p id="welcmsg">Welcome to Odyssey Hotel, where your journey to comfort and luxury begins. Experience a stay like no other as we take you on a memorable odyssey of relaxation and hospitality.</p>
                 <button><a href="#" id="explore">EXPLORE</a></button>
             </div>
             <div class="checkavailsec">
