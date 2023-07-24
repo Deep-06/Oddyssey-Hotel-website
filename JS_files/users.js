@@ -29,7 +29,7 @@ AddPro.addEventListener("click", (e) => {
   buttonEl.addEventListener("click", (e) => {
     e.preventDefault();
     console.log("hi");
-    fetch(`https://mock-odyssey-api-serverrr.onrender.com/products`, {
+    fetch(`https://mock-odyssey-api-serverrr.onrender.com/users`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -64,7 +64,7 @@ let tproducts = document.getElementById("total-products");
 
 getdata();
 async function getdata() {
-  let req = await fetch("https://mock-odyssey-api-serverrr.onrender.com/products");
+  let req = await fetch("https://mock-odyssey-api-serverrr.onrender.com/users");
   let data = await req.json();
 
   display(data);
