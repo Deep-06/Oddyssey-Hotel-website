@@ -151,8 +151,8 @@ Deepak Underiya   fw27_088 |
 
 ###
 netlify link
-https://moonlit-unicorn-475c35.netlify.app/
+https://oddyssey-hotel-website.vercel.app/
 
 ###
 Github Link
-https://github.com/Sankar-Mutyala/gaping-spring-1880
+https://github.com/Deep-06/Oddyssey-Hotel-website
